@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>install_date</key>
+	<date>2009-05-10T17:30:34Z</date>
+	<key>time_today</key>
+	<integer>0</integer>
+	<key>time_total</key>
+	<integer>0</integer>
+	<key>tip_screen</key>
+	<string></string>
+</dict>
+</plist>
