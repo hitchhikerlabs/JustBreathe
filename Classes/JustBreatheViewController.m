@@ -81,24 +81,45 @@
  */
 -(IBAction) startBreathing {
 	myStartTime = CFAbsoluteTimeGetCurrent();
+	[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(firstAnimation:) userInfo:nil repeats:NO];
+	[NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(secondAnimation:) userInfo:nil repeats:NO];
+	[NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(thirdAnimation:) userInfo:nil repeats:NO];
+	
+	stopButton.hidden = NO;
+	startButton.hidden = YES;
+	timeTodayLabel.text = [NSString stringWithFormat:@"Time spent today %f",[self.theAppDelegate getFromStats:@"time_today"]];
+	timeTotalLabel.text = [NSString stringWithFormat:@"Total time spent %f",[self.theAppDelegate getFromStats:@"time_total"]];
+}
+
+- (void)firstAnimation:(NSTimer*)theTimer {
 	NSArray *imgNames = [NSArray arrayWithObjects:@"breathe_background_plain.jpg",@"breathe_background_step1.jpg",@"breathe_background_step2.jpg",@"breathe_background_step3.jpg",@"breathe_background_step4.jpg",@"breathe_background_step5.jpg",@"breathe_background_step6.jpg",@"breathe_background_step7.jpg",@"breathe_background_step8.jpg",@"breathe_background_step9.jpg",@"breathe_background_step10.jpg",@"breathe_background_step11.jpg",@"breathe_background_step12.jpg",@"breathe_background_step13.jpg",@"breathe_background_step14.jpg",@"breathe_background_step15.jpg",@"breathe_background_step16.jpg",@"breathe_background_step17.jpg",@"breathe_background_step18.jpg",@"breathe_background_step19.jpg",nil];
 	NSMutableArray *myImages = [[NSMutableArray alloc] init];
 	for(int i=0;i< [imgNames count]; i++) {
 		[myImages addObject:[UIImage imageNamed:[imgNames objectAtIndex:i]] ];
 	}
+	breatheView.animationImages = myImages; 
+	breatheView.animationDuration = 2.00; 
+	// seconds 
+	breatheView.animationRepeatCount = 0; // 0 = loops forever 
+	[breatheView startAnimating];
+}
+
+- (void)secondAnimation:(NSTimer*)theTimer {
+	breatheView.image = [UIImage imageNamed:@"breathe_background_step19.jpg"];
+}
+
+- (void)thirdAnimation:(NSTimer*)theTimer {
+	NSArray *imgNames = [NSArray arrayWithObjects:@"breathe_background_plain.jpg",@"breathe_background_step1.jpg",@"breathe_background_step2.jpg",@"breathe_background_step3.jpg",@"breathe_background_step4.jpg",@"breathe_background_step5.jpg",@"breathe_background_step6.jpg",@"breathe_background_step7.jpg",@"breathe_background_step8.jpg",@"breathe_background_step9.jpg",@"breathe_background_step10.jpg",@"breathe_background_step11.jpg",@"breathe_background_step12.jpg",@"breathe_background_step13.jpg",@"breathe_background_step14.jpg",@"breathe_background_step15.jpg",@"breathe_background_step16.jpg",@"breathe_background_step17.jpg",@"breathe_background_step18.jpg",@"breathe_background_step19.jpg",nil];
+	NSMutableArray *myImages = [[NSMutableArray alloc] init];
 	for(int i=0;i< [imgNames count]; i++) {
 		int index = [imgNames count] - i -1;
 		[myImages addObject:[UIImage imageNamed:[imgNames objectAtIndex:index]] ];
 	}
 	breatheView.animationImages = myImages; 
-	breatheView.animationDuration = 5.00; 
+	breatheView.animationDuration = 2.00; 
 	// seconds 
 	breatheView.animationRepeatCount = 0; // 0 = loops forever 
 	[breatheView startAnimating];
-	stopButton.hidden = NO;
-	startButton.hidden = YES;
-	timeTodayLabel.text = [NSString stringWithFormat:@"Time spent today %f",[self.theAppDelegate getFromStats:@"time_today"]];
-	timeTotalLabel.text = [NSString stringWithFormat:@"Total time spent %f",[self.theAppDelegate getFromStats:@"time_total"]];
 }
 
 -(IBAction) stopBreathing {
