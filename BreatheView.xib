@@ -48,7 +48,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">breathe_background_plain.jpg</string>
+							<string key="NSResourceName">breathe_background_with_frame2.jpg</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="680803724">

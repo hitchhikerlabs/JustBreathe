@@ -16,6 +16,7 @@
 @synthesize startButton, stopButton;
 @synthesize myStartTime, myStopTime;
 @synthesize firstTimer, secondTimer, thirdTimer;
+@synthesize imgNames, imgArray;
 /*
  // The designated initializer. Override to perform setup that is required before the view is loaded.
  - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -38,6 +39,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
+	self.imgNames = [NSArray arrayWithObjects:@"breathe_background_with_frame2.jpg",@"breathe_background_step1.jpg",@"breathe_background_step2.jpg",@"breathe_background_step3.jpg",@"breathe_background_step4.jpg",@"breathe_background_step5.jpg",@"breathe_background_step6.jpg",@"breathe_background_step7.jpg",@"breathe_background_step8.jpg",@"breathe_background_step9.jpg",@"breathe_background_step10.jpg",@"breathe_background_step11.jpg",@"breathe_background_step12.jpg",@"breathe_background_step13.jpg",@"breathe_background_step14.jpg",@"breathe_background_step15.jpg",@"breathe_background_step16.jpg",@"breathe_background_step17.jpg",@"breathe_background_step18.jpg",@"breathe_background_step19.jpg",nil];
+	//for (int i = 0;i < [imgNames count]; i++) {
+//		[imgArray addObject:[UIImage imageNamed:[imgNames objectAtIndex:i]];
+//	}
     theAppDelegate = (JustBreatheNewAppDelegate *) [[UIApplication sharedApplication] delegate];
 	if([[theAppDelegate getStringFromStats:@"tip_screen"] isEqualToString:@"yes"]) {
         tipViewController.view.frame = CGRectMake(0, -460, 320, 460);
@@ -99,9 +104,23 @@
 }
 
 - (void)firstAnimation:(NSTimer*)theTimer {
-	NSArray *imgNames = [NSArray arrayWithObjects:@"breathe_background_plain.jpg",@"breathe_background_step1.jpg",@"breathe_background_step2.jpg",@"breathe_background_step3.jpg",@"breathe_background_step4.jpg",@"breathe_background_step5.jpg",@"breathe_background_step6.jpg",@"breathe_background_step7.jpg",@"breathe_background_step8.jpg",@"breathe_background_step9.jpg",@"breathe_background_step10.jpg",@"breathe_background_step11.jpg",@"breathe_background_step12.jpg",@"breathe_background_step13.jpg",@"breathe_background_step14.jpg",@"breathe_background_step15.jpg",@"breathe_background_step16.jpg",@"breathe_background_step17.jpg",@"breathe_background_step18.jpg",@"breathe_background_step19.jpg",nil];
 	NSMutableArray *myImages = [[NSMutableArray alloc] init];
 	for(int i=0;i< [imgNames count]; i++) {
+//		// Load the image
+//		NSString *name = [imgNames objectAtIndex:i];
+//    	
+//		UIImage *image = [UIImage newImageFromResource:name];
+//    
+//		// Put it in the cache
+//		[[ImageCache sharedImageCache] storeImage:image withKey:name];
+//    
+//		// Release the image
+//		[image release];
+//		image = nil;
+//	
+//		// Retrieve the image back
+//		UIImage *savedImage = [[ImageCache sharedImageCache] imageForKey:name];
+//		//imageView.image = savedImage;	
 		[myImages addObject:[UIImage imageNamed:[imgNames objectAtIndex:i]] ];
 	}
 	breatheView.animationImages = myImages; 
@@ -116,7 +135,6 @@
 }
 
 - (void)thirdAnimation:(NSTimer*)theTimer {
-	NSArray *imgNames = [NSArray arrayWithObjects:@"breathe_background_plain.jpg",@"breathe_background_step1.jpg",@"breathe_background_step2.jpg",@"breathe_background_step3.jpg",@"breathe_background_step4.jpg",@"breathe_background_step5.jpg",@"breathe_background_step6.jpg",@"breathe_background_step7.jpg",@"breathe_background_step8.jpg",@"breathe_background_step9.jpg",@"breathe_background_step10.jpg",@"breathe_background_step11.jpg",@"breathe_background_step12.jpg",@"breathe_background_step13.jpg",@"breathe_background_step14.jpg",@"breathe_background_step15.jpg",@"breathe_background_step16.jpg",@"breathe_background_step17.jpg",@"breathe_background_step18.jpg",@"breathe_background_step19.jpg",nil];
 	NSMutableArray *myImages = [[NSMutableArray alloc] init];
 	for(int i=0;i< [imgNames count]; i++) {
 		int index = [imgNames count] - i -1;
@@ -170,6 +188,8 @@
 	[firstTimer release];
 	[secondTimer release];
 	[thirdTimer release];
+	[imgNames release];
+	[imgArray release];
 	[super dealloc];
 }
 

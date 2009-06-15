@@ -36,6 +36,7 @@
 		91281FB50FDECC4F00D06F09 /* breathe_background_step17.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91281FA00FDECC4F00D06F09 /* breathe_background_step17.jpg */; };
 		91281FB60FDECC4F00D06F09 /* breathe_background_step18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91281FA10FDECC4F00D06F09 /* breathe_background_step18.jpg */; };
 		91281FB70FDECC4F00D06F09 /* breathe_background_step19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91281FA20FDECC4F00D06F09 /* breathe_background_step19.jpg */; };
+		912E75B90FE6ED0E00F22D46 /* breathe_background_with_frame2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 912E75B80FE6ED0E00F22D46 /* breathe_background_with_frame2.jpg */; };
 		91FB25A10FE1498600575950 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FB25A00FE1498600575950 /* TipViewController.m */; };
 		91FB25A30FE1499800575950 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91FB25A20FE1499800575950 /* TipView.xib */; };
 		91FB25A50FE149A900575950 /* JustBreatheViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91FB25A40FE149A900575950 /* JustBreatheViewController.xib */; };
@@ -80,6 +81,7 @@
 		91281FA00FDECC4F00D06F09 /* breathe_background_step17.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = breathe_background_step17.jpg; sourceTree = "<group>"; };
 		91281FA10FDECC4F00D06F09 /* breathe_background_step18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = breathe_background_step18.jpg; sourceTree = "<group>"; };
 		91281FA20FDECC4F00D06F09 /* breathe_background_step19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = breathe_background_step19.jpg; sourceTree = "<group>"; };
+		912E75B80FE6ED0E00F22D46 /* breathe_background_with_frame2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = breathe_background_with_frame2.jpg; path = ../JustBreathe1/breathe_background_with_frame2.jpg; sourceTree = "<group>"; };
 		91FB259F0FE1498600575950 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		91FB25A00FE1498600575950 /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
 		91FB25A20FE1499800575950 /* TipView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipView.xib; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		91281F8D0FDECC4100D06F09 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				912E75B80FE6ED0E00F22D46 /* breathe_background_with_frame2.jpg */,
 				91FB261B0FE14D7000575950 /* tip_close.png */,
 				91FB261C0FE14D7000575950 /* tip_dont_show.png */,
 				91FB261D0FE14D7000575950 /* tip_view_bar.png */,
@@ -272,6 +275,7 @@
 				91FB261E0FE14D7000575950 /* tip_close.png in Resources */,
 				91FB261F0FE14D7000575950 /* tip_dont_show.png in Resources */,
 				91FB26200FE14D7000575950 /* tip_view_bar.png in Resources */,
+				912E75B90FE6ED0E00F22D46 /* breathe_background_with_frame2.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
