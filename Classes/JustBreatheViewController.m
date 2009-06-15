@@ -15,6 +15,7 @@
 @synthesize breatheView;
 @synthesize startButton, stopButton;
 @synthesize myStartTime, myStopTime;
+@synthesize firstTimer, secondTimer, thirdTimer;
 /*
  // The designated initializer. Override to perform setup that is required before the view is loaded.
  - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -38,18 +39,18 @@
     [super viewDidLoad];
 	
     theAppDelegate = (JustBreatheNewAppDelegate *) [[UIApplication sharedApplication] delegate];
-	//if([(NSString*)[theAppDelegate objectFromAppSettingsPlistForKey:@"tip_screen"] isEqualToString:@"yes"]) {
-//        tipViewController.view.frame = CGRectMake(0, -460, 320, 460);
-//        //tipViewController.theAppDelegate = delegate;
-//        [UIView beginAnimations:nil context:NULL];
-//        [UIView setAnimationDuration:0.5];
-//        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-//        [tipViewController viewWillAppear:YES];
-//        [self.view addSubview:tipViewController.view];
-//        tipViewController.view.frame = [[UIScreen mainScreen] bounds];	
-//        [UIView commitAnimations];
-//	}
-//	
+	if([[theAppDelegate getStringFromStats:@"tip_screen"] isEqualToString:@"yes"]) {
+        tipViewController.view.frame = CGRectMake(0, -460, 320, 460);
+        //tipViewController.theAppDelegate = delegate;
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:0.5];
+        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+        [tipViewController viewWillAppear:YES];
+        [self.view addSubview:tipViewController.view];
+        tipViewController.view.frame = [[UIScreen mainScreen] bounds];	
+        [UIView commitAnimations];
+	}
+	
 	//UIView *lhAdView = [[UIView alloc] initWithFrame:CGRectMake(0, 384, 320, 80)];
 	//	UIColor *backgroundColor = [UIColor colorWithRed:(((float)191)/255.0) green:(((float)30)/255.0) blue:(((float)46)/255.0) alpha:1.0];
 	//	UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 384, 120, 40)];
@@ -81,14 +82,20 @@
  */
 -(IBAction) startBreathing {
 	myStartTime = CFAbsoluteTimeGetCurrent();
-	[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(firstAnimation:) userInfo:nil repeats:NO];
-	[NSTimer scheduledTimerWithTimeInterval:3.0 target:self selector:@selector(secondAnimation:) userInfo:nil repeats:NO];
-	[NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(thirdAnimation:) userInfo:nil repeats:NO];
-	
+	NSTimeInterval x = 0.0;
+	while(x < 1000) {
+		self.firstTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(firstAnimation:) userInfo:nil repeats:NO];
+		[self.firstTimer isValid];
+		x = x+ 5;
+		self.secondTimer =[NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(secondAnimation:) userInfo:nil repeats:NO];
+	[self.secondTimer isValid];
+		x = x+ 3;
+		self.thirdTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(thirdAnimation:) userInfo:nil repeats:NO];
+	[self.thirdTimer isValid];
+		x = x+ 10;
+	}	
 	stopButton.hidden = NO;
 	startButton.hidden = YES;
-	timeTodayLabel.text = [NSString stringWithFormat:@"Time spent today %f",[self.theAppDelegate getFromStats:@"time_today"]];
-	timeTotalLabel.text = [NSString stringWithFormat:@"Total time spent %f",[self.theAppDelegate getFromStats:@"time_total"]];
 }
 
 - (void)firstAnimation:(NSTimer*)theTimer {
@@ -98,7 +105,7 @@
 		[myImages addObject:[UIImage imageNamed:[imgNames objectAtIndex:i]] ];
 	}
 	breatheView.animationImages = myImages; 
-	breatheView.animationDuration = 2.00; 
+	breatheView.animationDuration = 8.00; 
 	// seconds 
 	breatheView.animationRepeatCount = 0; // 0 = loops forever 
 	[breatheView startAnimating];
@@ -116,24 +123,22 @@
 		[myImages addObject:[UIImage imageNamed:[imgNames objectAtIndex:index]] ];
 	}
 	breatheView.animationImages = myImages; 
-	breatheView.animationDuration = 2.00; 
+	breatheView.animationDuration = 10.00; 
 	// seconds 
 	breatheView.animationRepeatCount = 0; // 0 = loops forever 
 	[breatheView startAnimating];
 }
 
 -(IBAction) stopBreathing {
+	[self.firstTimer invalidate];
+	[self.secondTimer invalidate];
+	[self.thirdTimer invalidate];
 	myStopTime = CFAbsoluteTimeGetCurrent(); 
-	float currentTime = myStopTime - myStartTime;
-	float total_time = [self.theAppDelegate getFromStats:@"time_total"];
-	float total_today = [self.theAppDelegate getFromStats:@"time_today"];
-	[self.theAppDelegate writeToStats:@"time_total" value:[NSNumber numberWithFloat:(currentTime+total_time)]];
-	[self.theAppDelegate writeToStats:@"time_today" value:[NSNumber numberWithFloat:(currentTime+total_today)]];
+	int currentTime = (myStopTime - myStartTime)/18;
 	[breatheView stopAnimating];
 	stopButton.hidden = YES;
 	startButton.hidden = NO;
-	timeTodayLabel.text = [NSString stringWithFormat:@"Time spent today %f",[self.theAppDelegate getFromStats:@"time_today"]];
-	timeTotalLabel.text = [NSString stringWithFormat:@"Total time spent %f",[self.theAppDelegate getFromStats:@"time_total"]];
+	timeTodayLabel.text = [NSString stringWithFormat:@"Breaths taken  today %d",currentTime];
 }
 
 -(IBAction) showInfo {
@@ -162,6 +167,9 @@
 	[breatheView release];
 	[startButton release];
 	[stopButton release];
+	[firstTimer release];
+	[secondTimer release];
+	[thirdTimer release];
 	[super dealloc];
 }
 

@@ -24,5 +24,7 @@
 -(void) initializeStats;
 -(void) writeToStats:(NSString*)key value:(NSNumber*)value;
 -(float) getFromStats:(NSString*)key;
+-(NSString*) getStringFromStats:(NSString*)key;
+
 @end
 

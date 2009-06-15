@@ -25,7 +25,7 @@
 
 -(IBAction)dontShow
 {
-	[theAppDelegate writeToAppSettingsPlistForKey:@"tip_screen" value:@"no"];
+	[theAppDelegate writeToStats:@"tip_screen" value:@"no"];
 	[self close];
 }
 

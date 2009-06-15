@@ -8,8 +8,8 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="3"/>
 			<integer value="29"/>
+			<integer value="3"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -64,7 +64,7 @@
 					<object class="IBUIButton" id="365060212">
 						<reference key="NSNextResponder" ref="719281570"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{29.5, 45}, {141, 36}}</string>
+						<string key="NSFrame">{{171, 45}, {141, 36}}</string>
 						<reference key="NSSuperview" ref="719281570"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -92,7 +92,7 @@
 					<object class="IBUIButton" id="399577405">
 						<reference key="NSNextResponder" ref="719281570"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{30, 45.5}, {141, 36}}</string>
+						<string key="NSFrame">{{171, 45}, {141, 36}}</string>
 						<reference key="NSSuperview" ref="719281570"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -295,12 +295,12 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="192376592"/>
-							<reference ref="399577405"/>
-							<reference ref="365060212"/>
 							<reference ref="401966915"/>
 							<reference ref="680803724"/>
 							<reference ref="560605801"/>
 							<reference ref="227676593"/>
+							<reference ref="399577405"/>
+							<reference ref="365060212"/>
 						</object>
 						<reference key="parent" ref="360949347"/>
 					</object>
@@ -369,7 +369,7 @@
 					<string>TipViewController</string>
 					<string>{{21, 342}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{608, 309}, {320, 411}}</string>
+					<string>{{608, 389}, {320, 411}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>

@@ -2,9 +2,9 @@
 <archive type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="7.03">
 	<data>
 		<int key="IBDocument.SystemTarget">528</int>
-		<string key="IBDocument.SystemVersion">9G55</string>
+		<string key="IBDocument.SystemVersion">9J61</string>
 		<string key="IBDocument.InterfaceBuilderVersion">677</string>
-		<string key="IBDocument.AppKitVersion">949.43</string>
+		<string key="IBDocument.AppKitVersion">949.46</string>
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -117,86 +117,85 @@
 						<reference key="IBUISelectedImage" ref="468861268"/>
 						<reference key="IBUINormalImage" ref="468861268"/>
 					</object>
-					<object class="IBUIImageView" id="900765227">
+					<object class="IBUILabel" id="899995122">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{26, 91}, {44, 37}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<int key="IBUIContentMode">4</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">quote-start.png</string>
-						</object>
-					</object>
-					<object class="IBUIImageView" id="744845591">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{14, 78}, {160, 47}}</string>
-						<reference key="NSSuperview" ref="191373211"/>
-						<bool key="IBUIOpaque">NO</bool>
-						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
-						<int key="IBUIContentMode">4</int>
-						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<object class="NSCustomResource" key="IBUIImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">did_you_know.png</string>
-						</object>
-					</object>
-					<object class="IBUILabel" id="763672639">
-						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{63, 89}, {191, 29}}</string>
+						<string key="NSFrame">{{10, 42}, {307, 143}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<string key="IBUIText">Label</string>
+						<string key="IBUIText">It is thought by many cultures that the process of breathing is the essence of being. Using and learning proper breathing techniques is one of the most beneficial things that can be done for both short and long term physical and emotional health. Deep breathing or Abdominal breathing technique when performed regularly alleviates stress and leads to increased cardio-vascular health. This app gives you a visual cue on the correct breathing technique.</string>
 						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica-Oblique</string>
-							<double key="NSSize">1.700000e+01</double>
+							<string key="NSName">Helvetica</string>
+							<double key="NSSize">1.300000e+01</double>
 							<int key="NSfFlags">16</int>
 						</object>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>
-							<object class="NSColorSpace" key="NSCustomColorSpace">
+							<object class="NSColorSpace" key="NSCustomColorSpace" id="723782597">
 								<int key="NSID">1</int>
 							</object>
 						</object>
 						<nil key="IBUIHighlightedColor"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">1.000000e+01</float>
-						<int key="IBUITextAlignment">1</int>
+						<int key="IBUINumberOfLines">10</int>
 					</object>
-					<object class="IBUITextView" id="530064173">
+					<object class="IBUILabel" id="2772691">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{20, 113}, {280, 254}}</string>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{3, 186}, {619, 195}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
-						<bool key="IBUIShowsHorizontalScrollIndicator">NO</bool>
-						<bool key="IBUIDelaysContentTouches">NO</bool>
-						<bool key="IBUICanCancelContentTouches">NO</bool>
-						<bool key="IBUIBouncesZoom">NO</bool>
-						<bool key="IBUIEditable">NO</bool>
-						<string type="base64-UTF8" key="IBUIText">Q29sbGVnZSBzdHVkZW50cyBoYXZlIGJlY29tZSBtb3JlIG1hdGVyaWFsaXN0aWMuICBBY2NvcmRpbmcg
-dG8gdGhlIGFubnVhbCBBbWVyaWNhbiBGcmVzaG1hbiBTdXJ2ZXksIDcxJSBvZiBmcmVzaG1lbiBpbiAy
-MDA1IHNhaWQgaXQncyB2ZXJ5IGltcG9ydGFudCB0byBiZSAndmVyeSB3ZWxsIG9mZiBmaW5hbmNpYWxs
-eSwnIGNvbXBhcmVkIHdpdGggNDIlIGluIDE5NjcuICBJbiBjb250cmFzdCwgb25seSA1MiUgb2YgY3Vy
-cmVudCBmcmVzaG1lbiBhZG1pdHRlZCB0aGF0IGl0IHdhcyB2ZXJ5IGltcG9ydGFudCBvciBlc3NlbnRp
-YWwgZm9yIHRoZW0gdG8gJ2RldmVsb3AgYSBtZWFuaW5nZnVsIHBoaWxvc29waHkgb2YgbGlmZSwnIGNv
-bXBhcmVkIHdpdGggODYlIGluIDE5NjcuA</string>
-						<reference key="IBUITextColor" ref="716538628"/>
-						<object class="NSFont" key="IBUIFont">
-							<string key="NSName">Helvetica-Bold</string>
-							<double key="NSSize">1.600000e+01</double>
+						<string type="base64-UTF8" key="IBUIText">U3RlcHM6CiAqIFN0YXJ0IGJ5IHRha2luZyBhIGRlZXAgYnJlYXRoIGZyb20gdGhlIGxvd2VyIHBhcnQg
+b2YgeW91ciAKY2hlc3QuCiAqIE5vdGljZSBob3cgdGhlIGNvbG9yIG9mIGJvZHkgZnJhbWUgaW4gdGhl
+IGFwcCBmaWxscyB1cCAKZnJvbSBib3R0b20gdXAsIHJlZ3VsYXRlIHlvdXIgcmh5dGhtIHRvIG1hdGNo
+IHRoZSAKYW5pbWF0aW9uLgogKiBOb3cgdHJ5IGhvbGRpbmcgeW91ciBicmVhdGggdGlsbCB0aGUgdmlz
+dWFsIGN1ZSBmb3IgZXhoYWxlIApvciBhcyBsb25nIGFzIHlvdXIgYWJsZSwgbm90IGV4Y2VlZGluZyB0
+aGUgY3VlLgogKiBTbG93bHkgZXhoYWxlIHRocm91Z2ggeW91ciBtb3V0aCBvbiB0aGUgc2FtZSByaHl0
+aG0gCmFzIHRoZSBjb2xvciBpcyBlbXB0aWVkIGluIHRoZSBib2R5IGZyYW1lLgogKiBZb3Ugd2lsbCBu
+b3RpY2UgdGhhdCBleGhhbGF0aW9uIGlzIGNsb3NlIHRvIHR3aWNlIGFzIGxvbmcgYXMgaW5oYWxhdGlv
+biBhcyBkZWVwZXIgZXhoYWxhdGlvbnMgYXJlIG1vcmUgYmVuZWZpY2lhbC4KICAqIFJlcGVhdCB0aGUg
+Y3ljbGUgZm91ciBtb3JlIHRpbWVzIGZvciBhIHRvdGFsIG9mIDUgZGVlcCAKYnJlYXRocyBhbmQgZm9s
+bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
+						<object class="NSFont" key="IBUIFont" id="76115757">
+							<string key="NSName">Helvetica</string>
+							<double key="NSSize">1.200000e+01</double>
 							<int key="NSfFlags">16</int>
 						</object>
+						<object class="NSColor" key="IBUITextColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MSAxIDEAA</bytes>
+							<reference key="NSCustomColorSpace" ref="723782597"/>
+						</object>
+						<nil key="IBUIHighlightedColor"/>
+						<int key="IBUIBaselineAdjustment">1</int>
+						<float key="IBUIMinimumFontSize">1.000000e+01</float>
+						<int key="IBUINumberOfLines">15</int>
+					</object>
+					<object class="IBUILabel" id="284563968">
+						<reference key="NSNextResponder" ref="191373211"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{10, 382}, {284, 80}}</string>
+						<reference key="NSSuperview" ref="191373211"/>
+						<bool key="IBUIOpaque">NO</bool>
+						<bool key="IBUIClipsSubviews">YES</bool>
+						<bool key="IBUIUserInteractionEnabled">NO</bool>
+						<string key="IBUIText">Once you feel comfortable with the above technique, you may want to incorporate words that can enhance the exercise. You can use any positive words or those familiar with yoga can use any mantra of your choosing.</string>
+						<reference key="IBUIFont" ref="76115757"/>
+						<object class="NSColor" key="IBUITextColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MSAxIDEAA</bytes>
+							<reference key="NSCustomColorSpace" ref="723782597"/>
+						</object>
+						<nil key="IBUIHighlightedColor"/>
+						<int key="IBUIBaselineAdjustment">1</int>
+						<float key="IBUIMinimumFontSize">1.000000e+01</float>
+						<int key="IBUINumberOfLines">6</int>
 					</object>
 				</object>
 				<string key="NSFrameSize">{320, 480}</string>
@@ -253,38 +252,6 @@ bXBhcmVkIHdpdGggODYlIGluIDE5NjcuA</string>
 					</object>
 					<int key="connectionID">11</int>
 				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">tipTextView</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="530064173"/>
-					</object>
-					<int key="connectionID">32</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">tipLabel</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="763672639"/>
-					</object>
-					<int key="connectionID">34</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">didYouKnowImage</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="744845591"/>
-					</object>
-					<int key="connectionID">37</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">quoteImage</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="900765227"/>
-					</object>
-					<int key="connectionID">38</int>
-				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -305,10 +272,9 @@ bXBhcmVkIHdpdGggODYlIGluIDE5NjcuA</string>
 							<reference ref="924983800"/>
 							<reference ref="588200046"/>
 							<reference ref="264861688"/>
-							<reference ref="530064173"/>
-							<reference ref="763672639"/>
-							<reference ref="744845591"/>
-							<reference ref="900765227"/>
+							<reference ref="899995122"/>
+							<reference ref="2772691"/>
+							<reference ref="284563968"/>
 						</object>
 						<reference key="parent" ref="360949347"/>
 					</object>
@@ -339,23 +305,18 @@ bXBhcmVkIHdpdGggODYlIGluIDE5NjcuA</string>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">35</int>
-						<reference key="object" ref="900765227"/>
+						<int key="objectID">42</int>
+						<reference key="object" ref="899995122"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">36</int>
-						<reference key="object" ref="744845591"/>
+						<int key="objectID">43</int>
+						<reference key="object" ref="2772691"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">33</int>
-						<reference key="object" ref="763672639"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">4</int>
-						<reference key="object" ref="530064173"/>
+						<int key="objectID">44</int>
+						<reference key="object" ref="284563968"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -368,10 +329,9 @@ bXBhcmVkIHdpdGggODYlIGluIDE5NjcuA</string>
 					<string>-2.CustomClassName</string>
 					<string>1.IBEditorWindowLastContentRect</string>
 					<string>1.IBPluginDependency</string>
-					<string>33.IBPluginDependency</string>
-					<string>35.IBPluginDependency</string>
-					<string>36.IBPluginDependency</string>
-					<string>4.IBPluginDependency</string>
+					<string>42.IBPluginDependency</string>
+					<string>43.IBPluginDependency</string>
+					<string>44.IBPluginDependency</string>
 					<string>5.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
 					<string>7.IBPluginDependency</string>
@@ -381,7 +341,6 @@ bXBhcmVkIHdpdGggODYlIGluIDE5NjcuA</string>
 					<string>TipViewController</string>
 					<string>UIResponder</string>
 					<string>{{529, 105}, {320, 480}}</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -411,7 +370,7 @@ bXBhcmVkIHdpdGggODYlIGluIDE5NjcuA</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">41</int>
+			<int key="maxID">44</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -461,7 +420,7 @@ bXBhcmVkIHdpdGggODYlIGluIDE5NjcuA</string>
 			</object>
 		</object>
 		<int key="IBDocument.localizationMode">0</int>
-		<string key="IBDocument.LastKnownRelativeProjectPath">GratitudeStream.xcodeproj</string>
+		<string key="IBDocument.LastKnownRelativeProjectPath">JustBreatheNew.xcodeproj</string>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 	</data>
 </archive>

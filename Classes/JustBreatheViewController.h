@@ -18,6 +18,7 @@
 	IBOutlet UIButton *startButton;
 	IBOutlet UIButton *stopButton;
 	CFAbsoluteTime myStartTime, myStopTime;
+	NSTimer *firstTimer, *secondTimer, *thirdTimer;
 }
 
 @property (nonatomic, retain) IBOutlet TipViewController *tipViewController;
@@ -26,6 +27,7 @@
 @property (nonatomic, retain) IBOutlet UIImageView *breatheView;
 @property (nonatomic, retain) IBOutlet UIButton *startButton, *stopButton;
 @property CFAbsoluteTime myStartTime, myStopTime;
+@property (nonatomic, retain) NSTimer *firstTimer, *secondTimer, *thirdTimer;
 
 -(IBAction) startBreathing;
 -(IBAction) stopBreathing;

@@ -53,6 +53,10 @@
     return([[self.file_contents objectForKey:key] floatValue]);
 }
 
+-(NSString*) getStringFromStats:(NSString*)key {
+    return([self.file_contents objectForKey:key]);
+}
+
 - (void)dealloc {
     [window release];
 	[viewController release];
