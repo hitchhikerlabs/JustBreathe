@@ -37,6 +37,7 @@
 		91281FB60FDECC4F00D06F09 /* breathe_background_step18.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91281FA10FDECC4F00D06F09 /* breathe_background_step18.jpg */; };
 		91281FB70FDECC4F00D06F09 /* breathe_background_step19.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 91281FA20FDECC4F00D06F09 /* breathe_background_step19.jpg */; };
 		912E75B90FE6ED0E00F22D46 /* breathe_background_with_frame2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 912E75B80FE6ED0E00F22D46 /* breathe_background_with_frame2.jpg */; };
+		917E8C6B0FE811C800B263B1 /* SliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 917E8C6A0FE811C800B263B1 /* SliderView.m */; };
 		91EF497F0FE7D67300F8D6CD /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 91EF497E0FE7D67300F8D6CD /* icon.png */; };
 		91FB25A10FE1498600575950 /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91FB25A00FE1498600575950 /* TipViewController.m */; };
 		91FB25A30FE1499800575950 /* TipView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91FB25A20FE1499800575950 /* TipView.xib */; };
@@ -83,6 +84,8 @@
 		91281FA10FDECC4F00D06F09 /* breathe_background_step18.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = breathe_background_step18.jpg; sourceTree = "<group>"; };
 		91281FA20FDECC4F00D06F09 /* breathe_background_step19.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = breathe_background_step19.jpg; sourceTree = "<group>"; };
 		912E75B80FE6ED0E00F22D46 /* breathe_background_with_frame2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = breathe_background_with_frame2.jpg; path = ../JustBreathe1/breathe_background_with_frame2.jpg; sourceTree = "<group>"; };
+		917E8C690FE811C800B263B1 /* SliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SliderView.h; sourceTree = "<group>"; };
+		917E8C6A0FE811C800B263B1 /* SliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SliderView.m; sourceTree = "<group>"; };
 		91EF497E0FE7D67300F8D6CD /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		91FB259F0FE1498600575950 /* TipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
 		91FB25A00FE1498600575950 /* TipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				917E8C690FE811C800B263B1 /* SliderView.h */,
+				917E8C6A0FE811C800B263B1 /* SliderView.m */,
 				91FB259F0FE1498600575950 /* TipViewController.h */,
 				91FB25A00FE1498600575950 /* TipViewController.m */,
 				1D3623240D0F684500981E51 /* JustBreatheNewAppDelegate.h */,
@@ -294,6 +299,7 @@
 				1D3623260D0F684500981E51 /* JustBreatheNewAppDelegate.m in Sources */,
 				91281F860FDECB8B00D06F09 /* JustBreatheViewController.m in Sources */,
 				91FB25A10FE1498600575950 /* TipViewController.m in Sources */,
+				917E8C6B0FE811C800B263B1 /* SliderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

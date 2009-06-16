@@ -230,6 +230,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -268,13 +270,13 @@
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>91281F8D0FDECC4100D06F09</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>1</integer>
+									<integer>14</integer>
+									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -309,8 +311,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -325,10 +325,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>JustBreatheViewController.m</string>
-										<key>_historyCapacity</key>
-										<integer>10</integer>
-										<key>bookmark</key>
-										<string>912E75D60FE6EF1E00F22D46</string>
 										<key>history</key>
 										<array>
 											<string>91FB268D0FE167EC00575950</string>
@@ -336,7 +332,6 @@
 											<string>912E75140FE6C84600F22D46</string>
 											<string>912E75C20FE6EEBE00F22D46</string>
 											<string>912E75D10FE6EEF200F22D46</string>
-											<string>912E75C30FE6EEBE00F22D46</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -345,11 +340,6 @@
 											<string>91FB25BC0FE14A4D00575950</string>
 											<string>912E75C50FE6EEBE00F22D46</string>
 											<string>912E75C60FE6EEBE00F22D46</string>
-											<string>912E75C70FE6EEBE00F22D46</string>
-											<string>912E75C80FE6EEBE00F22D46</string>
-											<string>912E75C90FE6EEBE00F22D46</string>
-											<string>912E75CA0FE6EEBE00F22D46</string>
-											<string>912E75D20FE6EEF200F22D46</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -407,9 +397,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>912E75CC0FE6EEBE00F22D46</string>
+				<string>917E8C650FE8119D00B263B1</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>912E75CD0FE6EEBE00F22D46</string>
+				<string>917E8C660FE8119D00B263B1</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -543,11 +533,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>912E75CE0FE6EEBE00F22D46</string>
-		<string>912E75CF0FE6EEBE00F22D46</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>91281F780FDECB6F00D06F09</string>
 		<string>/Users/neha/git/JustBreathe/JustBreatheNew.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -567,14 +552,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JustBreatheViewController.m</string>
+								<string></string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -630,7 +613,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>91281F780FDECB6F00D06F09</string>
-				<string>912E758F0FE6EB7E00F22D46</string>
+				<string>917E8C580FE8119A00B263B1</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -750,13 +733,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>912E759E0FE6EC7100F22D46</string>
+				<string>917E8C590FE8119A00B263B1</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>912E759F0FE6EC7100F22D46</string>
-				<string>912E75A00FE6EC7100F22D46</string>
-				<string>912E75A10FE6EC7100F22D46</string>
-				<string>912E75A20FE6EC7100F22D46</string>
-				<string>912E75A30FE6EC7100F22D46</string>
+				<string>917E8C5A0FE8119A00B263B1</string>
+				<string>917E8C5B0FE8119A00B263B1</string>
+				<string>917E8C5C0FE8119A00B263B1</string>
+				<string>917E8C5D0FE8119A00B263B1</string>
+				<string>917E8C5E0FE8119A00B263B1</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -875,8 +858,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -912,7 +893,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>912E75A40FE6EC7100F22D46</string>
+				<string>917E8C5F0FE8119A00B263B1</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
