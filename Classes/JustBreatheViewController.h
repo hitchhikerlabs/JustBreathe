@@ -22,6 +22,7 @@
 	NSArray *imgNames;
 	NSMutableArray *imgArray;
 	BOOL continueAnimation;
+	NSTimeInterval x;
 }
 
 @property (nonatomic, retain) IBOutlet TipViewController *tipViewController;
@@ -34,8 +35,11 @@
 @property (nonatomic, retain) NSArray *imgNames;
 @property (nonatomic, retain) NSMutableArray *imgArray;
 @property BOOL continueAnimation;
+@property NSTimeInterval x;
+
 
 -(IBAction) startBreathing;
 -(IBAction) stopBreathing;
 -(IBAction) showInfo;
+-(void) startAnimations :(NSTimer*)theTimer;
 @end
