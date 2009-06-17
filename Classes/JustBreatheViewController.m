@@ -17,6 +17,7 @@
 @synthesize myStartTime, myStopTime;
 @synthesize firstTimer, secondTimer, thirdTimer;
 @synthesize imgNames, imgArray;
+@synthesize continueAnimation;
 /*
  // The designated initializer. Override to perform setup that is required before the view is loaded.
  - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -86,9 +87,10 @@
  }
  */
 -(IBAction) startBreathing {
+	self.continueAnimation = true;
 	myStartTime = CFAbsoluteTimeGetCurrent();
 	NSTimeInterval x = 0.0;
-	while(x < 1000) {
+	if(self.continueAnimation) {
 		self.firstTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(firstAnimation:) userInfo:nil repeats:NO];
 		[self.firstTimer isValid];
 		x = x+ 3;
@@ -148,12 +150,14 @@
 }
 
 -(IBAction) stopBreathing {
-	[self.firstTimer invalidate];
-	[self.secondTimer invalidate];
-	[self.thirdTimer invalidate];
+	self.continueAnimation = false;
+	if ([self.firstTimer isValid]) [self.firstTimer invalidate];
+	if ([self.secondTimer isValid]) [self.secondTimer invalidate];
+	if ([self.thirdTimer isValid]) [self.thirdTimer invalidate];
 	myStopTime = CFAbsoluteTimeGetCurrent(); 
 	int currentTime = (myStopTime - myStartTime)/18;
-	[breatheView stopAnimating];
+	//[breatheView stopAnimating];
+	breatheView.image = [UIImage imageNamed:@"breathe_background_plain.jpg"];
 	stopButton.hidden = YES;
 	startButton.hidden = NO;
 	timeTodayLabel.text = [NSString stringWithFormat:@"Breaths taken  today %d",currentTime];

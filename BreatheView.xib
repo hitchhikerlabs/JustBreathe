@@ -139,7 +139,7 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 							<object class="IBUIImageView" id="401966915">
 								<reference key="NSNextResponder" ref="821295486"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrameSize">{320, 411}</string>
+								<string key="NSFrameSize">{320, 460}</string>
 								<reference key="NSSuperview" ref="821295486"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -153,7 +153,7 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 							<object class="IBUIImageView" id="680803724">
 								<reference key="NSNextResponder" ref="821295486"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrameSize">{320, 411}</string>
+								<string key="NSFrame">{{0, 20}, {320, 440}}</string>
 								<reference key="NSSuperview" ref="821295486"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
