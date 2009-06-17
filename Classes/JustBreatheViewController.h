@@ -16,7 +16,6 @@
 	IBOutlet UILabel *breatheLabel, *timeTodayLabel, *timeTotalLabel;
 	IBOutlet UIImageView *breatheView;
 	IBOutlet UIButton *startButton;
-	IBOutlet UIButton *stopButton;
 	CFAbsoluteTime myStartTime, myStopTime;
 	NSTimer *firstTimer, *secondTimer, *thirdTimer;
 	NSArray *imgNames;
@@ -29,7 +28,7 @@
 @property (nonatomic, retain) JustBreatheNewAppDelegate *theAppDelegate;
 @property (nonatomic, retain) IBOutlet UILabel *breatheLabel, *timeTodayLabel, *timeTotalLabel;
 @property (nonatomic, retain) IBOutlet UIImageView *breatheView;
-@property (nonatomic, retain) IBOutlet UIButton *startButton, *stopButton;
+@property (nonatomic, retain) IBOutlet UIButton *startButton;
 @property CFAbsoluteTime myStartTime, myStopTime;
 @property (nonatomic, retain) NSTimer *firstTimer, *secondTimer, *thirdTimer;
 @property (nonatomic, retain) NSArray *imgNames;

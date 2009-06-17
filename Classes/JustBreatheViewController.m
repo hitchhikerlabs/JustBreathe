@@ -13,7 +13,7 @@
 @synthesize tipViewController, theAppDelegate;
 @synthesize breatheLabel, timeTodayLabel, timeTotalLabel;
 @synthesize breatheView;
-@synthesize startButton, stopButton;
+@synthesize startButton;
 @synthesize myStartTime, myStopTime;
 @synthesize firstTimer, secondTimer, thirdTimer;
 @synthesize imgNames, imgArray;
@@ -93,6 +93,9 @@
 	} else {
 		self.continueAnimation = true;
 		self.x = 0.0;
+		[startButton setTitle:@"Stop" forState:UIControlStateNormal];
+		[startButton setTitle:@"Stop" forState:UIControlStateSelected];
+		[startButton setTitle:@"Stop" forState:UIControlStateHighlighted];
 	}
 	myStartTime = CFAbsoluteTimeGetCurrent();
 	if (self.continueAnimation) {
@@ -105,15 +108,13 @@
 		if ([self.firstTimer isValid]) [self.firstTimer invalidate];
 		breatheView.image = [UIImage imageNamed:@"breathe_background_with_frame2.jpg"];
 		[breatheView stopAnimating];
-		myStopTime = CFAbsoluteTimeGetCurrent(); 
-		int currentTime = (myStopTime - myStartTime)/18;
+		//myStopTime = CFAbsoluteTimeGetCurrent(); 
+//		int currentTime = (myStopTime - myStartTime)/18;
 	}
-	//stopButton.hidden = NO;
-//	startButton.hidden = YES;
 }
 
 -(void) startAnimations :(NSTimer*)theTimer {
-	//while(true) {
+	while(self.x < 60) {
 	self.firstTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(firstAnimation:) userInfo:nil repeats:NO];
 	[self.firstTimer isValid];
 	self.x = x+ 3;
@@ -125,7 +126,7 @@
 	[self.thirdTimer isValid];
 	self.x = x+ 4;
 	[breatheView stopAnimating];
-	//}
+	}
 }
 
 - (void)firstAnimation:(NSTimer*)theTimer {
@@ -148,11 +149,13 @@
 //		//imageView.image = savedImage;	
 		[myImages addObject:[UIImage imageNamed:[imgNames objectAtIndex:i]] ];
 	}
+	[UIView beginAnimations:nil context:nil];
 	breatheView.animationImages = myImages; 
 	breatheView.animationDuration = 6.00; 
 	// seconds 
 	breatheView.animationRepeatCount = 0; // 0 = loops forever 
 	[breatheView startAnimating];
+	[UIView commitAnimations];
 }
 
 - (void)secondAnimation:(NSTimer*)theTimer {
@@ -165,24 +168,13 @@
 		int index = [imgNames count] - i -1;
 		[myImages addObject:[UIImage imageNamed:[imgNames objectAtIndex:index]] ];
 	}
+	[UIView beginAnimations:nil context:nil];
 	breatheView.animationImages = myImages; 
 	breatheView.animationDuration = 5.00; 
 	// seconds 
 	breatheView.animationRepeatCount = 0; // 0 = loops forever 
 	[breatheView startAnimating];
-}
-
--(IBAction) stopBreathing {
-	self.continueAnimation = false;
-	if ([self.firstTimer isValid]) [self.firstTimer invalidate];
-	if ([self.secondTimer isValid]) [self.secondTimer invalidate];
-	if ([self.thirdTimer isValid]) [self.thirdTimer invalidate];
-	
-	//[breatheView stopAnimating];
-	breatheView.image = [UIImage imageNamed:@"breathe_background_plain.jpg"];
-	stopButton.hidden = YES;
-	startButton.hidden = NO;
-	//timeTodayLabel.text = [NSString stringWithFormat:@"Breaths taken  today %d",currentTime];
+	[UIView commitAnimations];
 }
 
 -(IBAction) showInfo {
@@ -210,7 +202,6 @@
 	[timeTodayLabel release];
 	[breatheView release];
 	[startButton release];
-	[stopButton release];
 	[firstTimer release];
 	[secondTimer release];
 	[thirdTimer release];
