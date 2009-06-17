@@ -90,6 +90,9 @@
 -(IBAction) startBreathing {
 	if(self.continueAnimation) {
 		self.continueAnimation = false;
+		[startButton setTitle:@"Start" forState:UIControlStateNormal];
+		[startButton setTitle:@"Start" forState:UIControlStateSelected];
+		[startButton setTitle:@"Start" forState:UIControlStateHighlighted];
 	} else {
 		self.continueAnimation = true;
 		self.x = 0.0;
@@ -99,6 +102,7 @@
 	}
 	myStartTime = CFAbsoluteTimeGetCurrent();
 	if (self.continueAnimation) {
+		breatheView.hidden = NO;
 		[NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(startAnimations:) userInfo:nil repeats:NO];
 	} else {
 		if ([self.thirdTimer isValid]) {
@@ -108,6 +112,7 @@
 		if ([self.firstTimer isValid]) [self.firstTimer invalidate];
 		breatheView.image = [UIImage imageNamed:@"breathe_background_with_frame2.jpg"];
 		[breatheView stopAnimating];
+		breatheView.hidden = YES;
 		//myStopTime = CFAbsoluteTimeGetCurrent(); 
 //		int currentTime = (myStopTime - myStartTime)/18;
 	}
