@@ -91,13 +91,13 @@
 	while(x < 1000) {
 		self.firstTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(firstAnimation:) userInfo:nil repeats:NO];
 		[self.firstTimer isValid];
-		x = x+ 5;
+		x = x+ 3;
 		self.secondTimer =[NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(secondAnimation:) userInfo:nil repeats:NO];
 	[self.secondTimer isValid];
 		x = x+ 3;
 		self.thirdTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(thirdAnimation:) userInfo:nil repeats:NO];
 	[self.thirdTimer isValid];
-		x = x+ 10;
+		x = x+ 4;
 	}	
 	stopButton.hidden = NO;
 	startButton.hidden = YES;
@@ -124,7 +124,7 @@
 		[myImages addObject:[UIImage imageNamed:[imgNames objectAtIndex:i]] ];
 	}
 	breatheView.animationImages = myImages; 
-	breatheView.animationDuration = 8.00; 
+	breatheView.animationDuration = 6.00; 
 	// seconds 
 	breatheView.animationRepeatCount = 0; // 0 = loops forever 
 	[breatheView startAnimating];
@@ -141,7 +141,7 @@
 		[myImages addObject:[UIImage imageNamed:[imgNames objectAtIndex:index]] ];
 	}
 	breatheView.animationImages = myImages; 
-	breatheView.animationDuration = 10.00; 
+	breatheView.animationDuration = 5.00; 
 	// seconds 
 	breatheView.animationRepeatCount = 0; // 0 = loops forever 
 	[breatheView startAnimating];
