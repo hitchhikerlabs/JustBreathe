@@ -276,7 +276,7 @@
 							<array>
 								<array>
 									<integer>14</integer>
-									<integer>9</integer>
+									<integer>11</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -533,6 +533,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>1CD10A99069EF8BA00B06720</string>
+		<string>91281F780FDECB6F00D06F09</string>
 		<string>/Users/neha/git/JustBreathe/JustBreatheNew.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -613,7 +616,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>91281F780FDECB6F00D06F09</string>
-				<string>917E8C580FE8119A00B263B1</string>
+				<string>917E8C760FE8188C00B263B1</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -733,13 +736,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>917E8C590FE8119A00B263B1</string>
+				<string>917E8C770FE8188C00B263B1</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>917E8C5A0FE8119A00B263B1</string>
-				<string>917E8C5B0FE8119A00B263B1</string>
-				<string>917E8C5C0FE8119A00B263B1</string>
-				<string>917E8C5D0FE8119A00B263B1</string>
-				<string>917E8C5E0FE8119A00B263B1</string>
+				<string>917E8C780FE8188C00B263B1</string>
+				<string>917E8C790FE8188C00B263B1</string>
+				<string>917E8C7A0FE8188C00B263B1</string>
+				<string>917E8C7B0FE8188C00B263B1</string>
+				<string>917E8C7C0FE8188C00B263B1</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -893,7 +896,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>917E8C5F0FE8119A00B263B1</string>
+				<string>917E8C7D0FE8188C00B263B1</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
