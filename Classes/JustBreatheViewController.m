@@ -19,6 +19,7 @@
 @synthesize imgNames, imgArray;
 @synthesize continueAnimation;
 @synthesize x;
+@synthesize infoWebView;
 /*
  // The designated initializer. Override to perform setup that is required before the view is loaded.
  - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -42,7 +43,8 @@
     [super viewDidLoad];
 	
 	self.imgNames = [NSArray arrayWithObjects:@"breathe_background_step1.jpg",@"breathe_background_step2.jpg",@"breathe_background_step3.jpg",@"breathe_background_step4.jpg",@"breathe_background_step5.jpg",@"breathe_background_step6.jpg",@"breathe_background_step7.jpg",@"breathe_background_step8.jpg",@"breathe_background_step9.jpg",@"breathe_background_step10.jpg",@"breathe_background_step11.jpg",@"breathe_background_step12.jpg",@"breathe_background_step13.jpg",@"breathe_background_step14.jpg",@"breathe_background_step15.jpg",@"breathe_background_step16.jpg",@"breathe_background_step17.jpg",@"breathe_background_step18.jpg",@"breathe_background_step19.jpg",nil];
-	
+	[infoWebView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource: @"terms" ofType:@"html"]isDirectory:NO]]];
+
 	//UIView *lhAdView = [[UIView alloc] initWithFrame:CGRectMake(0, 384, 320, 80)];
 	//	UIColor *backgroundColor = [UIColor colorWithRed:(((float)191)/255.0) green:(((float)30)/255.0) blue:(((float)46)/255.0) alpha:1.0];
 	//	UILabel *testLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 384, 120, 40)];
@@ -191,6 +193,7 @@
 	[imgNames release];
 	[imgArray release];
 	[fourthTimer release];
+	[infoWebView release];
 	[super dealloc];
 }
 

@@ -1,0 +1,43 @@
+body {
+	margin: 30px 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	background-color: transparent;
+}
+
+h1 {
+	font-size: 72px;
+	background-color: #bb1b2c;
+	color: #fff;
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+}
+
+h2 {
+	font-size: 50px;
+	margin: 20px 50px;
+}
+
+p {
+	font-size: 50px;
+	padding: 0 50px;
+}
+
+ol {
+	margin: 0 75px;
+}
+
+ul {
+	margin: 0 75px;
+}
+
+li {
+	font-size: 50px;
+}
+
+p.title {
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+}

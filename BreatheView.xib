@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="44"/>
+			<integer value="43"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -44,7 +44,7 @@
 							<object class="IBUIButton" id="1035940585">
 								<reference key="NSNextResponder" ref="413555255"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{80, 10}, {141, 36}}</string>
+								<string key="NSFrame">{{80, 15}, {141, 36}}</string>
 								<reference key="NSSuperview" ref="413555255"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -69,74 +69,15 @@
 									<bytes key="NSRGB">MC4xOTYwNzg0MyAwLjMwOTgwMzkzIDAuNTIxNTY4NjYAA</bytes>
 								</object>
 							</object>
-							<object class="IBUILabel" id="675298768">
+							<object class="IBUIWebView" id="528837116">
 								<reference key="NSNextResponder" ref="413555255"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{10, 42}, {307, 143}}</string>
+								<string key="NSFrame">{{0, 50}, {320, 440}}</string>
 								<reference key="NSSuperview" ref="413555255"/>
-								<bool key="IBUIOpaque">NO</bool>
+								<reference key="IBUIBackgroundColor" ref="350432093"/>
 								<bool key="IBUIClipsSubviews">YES</bool>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="IBUIText">It is thought by many cultures that the process of breathing is the essence of being. Using and learning proper breathing techniques is one of the most beneficial things that can be done for both short and long term physical and emotional health. Deep breathing or Abdominal breathing technique when performed regularly alleviates stress and leads to increased cardio-vascular health. This app gives you a visual cue on the correct breathing technique.</string>
-								<object class="NSFont" key="IBUIFont">
-									<string key="NSName">Helvetica</string>
-									<double key="NSSize">1.300000e+01</double>
-									<int key="NSfFlags">16</int>
-								</object>
-								<object class="NSColor" key="IBUITextColor" id="22499660">
-									<int key="NSColorSpace">1</int>
-									<bytes key="NSRGB">MCAwIDAAA</bytes>
-								</object>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">1</int>
-								<float key="IBUIMinimumFontSize">1.000000e+01</float>
-								<int key="IBUINumberOfLines">10</int>
-							</object>
-							<object class="IBUILabel" id="787010966">
-								<reference key="NSNextResponder" ref="413555255"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{3, 186}, {619, 195}}</string>
-								<reference key="NSSuperview" ref="413555255"/>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string type="base64-UTF8" key="IBUIText">U3RlcHM6CiAqIFN0YXJ0IGJ5IHRha2luZyBhIGRlZXAgYnJlYXRoIGZyb20gdGhlIGxvd2VyIHBhcnQg
-b2YgeW91ciAKY2hlc3QuCiAqIE5vdGljZSBob3cgdGhlIGNvbG9yIG9mIGJvZHkgZnJhbWUgaW4gdGhl
-IGFwcCBmaWxscyB1cCAKZnJvbSBib3R0b20gdXAsIHJlZ3VsYXRlIHlvdXIgcmh5dGhtIHRvIG1hdGNo
-IHRoZSAKYW5pbWF0aW9uLgogKiBOb3cgdHJ5IGhvbGRpbmcgeW91ciBicmVhdGggdGlsbCB0aGUgdmlz
-dWFsIGN1ZSBmb3IgZXhoYWxlIApvciBhcyBsb25nIGFzIHlvdXIgYWJsZSwgbm90IGV4Y2VlZGluZyB0
-aGUgY3VlLgogKiBTbG93bHkgZXhoYWxlIHRocm91Z2ggeW91ciBtb3V0aCBvbiB0aGUgc2FtZSByaHl0
-aG0gCmFzIHRoZSBjb2xvciBpcyBlbXB0aWVkIGluIHRoZSBib2R5IGZyYW1lLgogKiBZb3Ugd2lsbCBu
-b3RpY2UgdGhhdCBleGhhbGF0aW9uIGlzIGNsb3NlIHRvIHR3aWNlIGFzIGxvbmcgYXMgaW5oYWxhdGlv
-biBhcyBkZWVwZXIgZXhoYWxhdGlvbnMgYXJlIG1vcmUgYmVuZWZpY2lhbC4KICAqIFJlcGVhdCB0aGUg
-Y3ljbGUgZm91ciBtb3JlIHRpbWVzIGZvciBhIHRvdGFsIG9mIDUgZGVlcCAKYnJlYXRocyBhbmQgZm9s
-bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
-								<object class="NSFont" key="IBUIFont" id="753555029">
-									<string key="NSName">Helvetica</string>
-									<double key="NSSize">1.200000e+01</double>
-									<int key="NSfFlags">16</int>
-								</object>
-								<reference key="IBUITextColor" ref="22499660"/>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">1</int>
-								<float key="IBUIMinimumFontSize">1.000000e+01</float>
-								<int key="IBUINumberOfLines">15</int>
-							</object>
-							<object class="IBUILabel" id="164682972">
-								<reference key="NSNextResponder" ref="413555255"/>
-								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{10, 382}, {284, 80}}</string>
-								<reference key="NSSuperview" ref="413555255"/>
-								<bool key="IBUIOpaque">NO</bool>
-								<bool key="IBUIClipsSubviews">YES</bool>
-								<bool key="IBUIUserInteractionEnabled">NO</bool>
-								<string key="IBUIText">Once you feel comfortable with the above technique, you may want to incorporate words that can enhance the exercise. You can use any positive words or those familiar with yoga can use any mantra of your choosing.</string>
-								<reference key="IBUIFont" ref="753555029"/>
-								<reference key="IBUITextColor" ref="22499660"/>
-								<nil key="IBUIHighlightedColor"/>
-								<int key="IBUIBaselineAdjustment">1</int>
-								<float key="IBUIMinimumFontSize">1.000000e+01</float>
-								<int key="IBUINumberOfLines">6</int>
+								<bool key="IBUIMultipleTouchEnabled">YES</bool>
+								<bool key="IBUIScalesPageToFit">YES</bool>
 							</object>
 						</object>
 						<string key="NSFrameSize">{320, 460}</string>
@@ -289,6 +230,14 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 					</object>
 					<int key="connectionID">50</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">infoWebView</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="528837116"/>
+					</object>
+					<int key="connectionID">52</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -317,22 +266,10 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 						<reference key="object" ref="719281570"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="413555255"/>
 							<reference ref="821295486"/>
+							<reference ref="413555255"/>
 						</object>
 						<reference key="parent" ref="360949347"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">43</int>
-						<reference key="object" ref="413555255"/>
-						<object class="NSMutableArray" key="children">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="164682972"/>
-							<reference ref="787010966"/>
-							<reference ref="675298768"/>
-							<reference ref="1035940585"/>
-						</object>
-						<reference key="parent" ref="719281570"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">44</int>
@@ -367,23 +304,23 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 						<reference key="parent" ref="821295486"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">46</int>
-						<reference key="object" ref="675298768"/>
-						<reference key="parent" ref="413555255"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">47</int>
-						<reference key="object" ref="787010966"/>
-						<reference key="parent" ref="413555255"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">48</int>
-						<reference key="object" ref="164682972"/>
-						<reference key="parent" ref="413555255"/>
+						<int key="objectID">43</int>
+						<reference key="object" ref="413555255"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+							<reference ref="1035940585"/>
+							<reference ref="528837116"/>
+						</object>
+						<reference key="parent" ref="719281570"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">49</int>
 						<reference key="object" ref="1035940585"/>
+						<reference key="parent" ref="413555255"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">51</int>
+						<reference key="object" ref="528837116"/>
 						<reference key="parent" ref="413555255"/>
 					</object>
 				</object>
@@ -401,10 +338,8 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 					<string>41.IBPluginDependency</string>
 					<string>43.IBPluginDependency</string>
 					<string>44.IBPluginDependency</string>
-					<string>46.IBPluginDependency</string>
-					<string>47.IBPluginDependency</string>
-					<string>48.IBPluginDependency</string>
 					<string>49.IBPluginDependency</string>
+					<string>51.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
 					<string>7.IBPluginDependency</string>
 				</object>
@@ -414,8 +349,6 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 					<string>UIResponder</string>
 					<string>SliderView</string>
 					<string>{{608, 389}, {320, 411}}</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -447,7 +380,7 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">50</int>
+			<int key="maxID">52</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -456,19 +389,8 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 					<string key="className">JustBreatheViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<bool key="EncodedWithXMLCoder">YES</bool>
-						<object class="NSMutableArray" key="dict.sortedKeys">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>showInfo</string>
-							<string>startBreathing</string>
-							<string>stopBreathing</string>
-						</object>
-						<object class="NSMutableArray" key="dict.values">
-							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>id</string>
-							<string>id</string>
-							<string>id</string>
-						</object>
+						<string key="NS.key.0">startBreathing</string>
+						<string key="NS.object.0">id</string>
 					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
@@ -476,6 +398,7 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>breatheLabel</string>
 							<string>breatheView</string>
+							<string>infoWebView</string>
 							<string>startButton</string>
 							<string>timeTodayLabel</string>
 							<string>timeTotalLabel</string>
@@ -484,6 +407,7 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UILabel</string>
 							<string>UIImageView</string>
+							<string>UIWebView</string>
 							<string>UIButton</string>
 							<string>UILabel</string>
 							<string>UILabel</string>

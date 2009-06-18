@@ -20,6 +20,7 @@
 	NSMutableArray *imgArray;
 	BOOL continueAnimation;
 	NSTimeInterval x;
+	IBOutlet UIWebView *infoWebView;
 }
 
 @property (nonatomic, retain) JustBreatheNewAppDelegate *theAppDelegate;
@@ -32,10 +33,9 @@
 @property (nonatomic, retain) NSMutableArray *imgArray;
 @property BOOL continueAnimation;
 @property NSTimeInterval x;
+@property (nonatomic, retain) IBOutlet UIWebView *infoWebView;
 
 
 -(IBAction) startBreathing;
--(IBAction) stopBreathing;
--(IBAction) showInfo;
 -(void) startAnimations :(NSTimer*)theTimer;
 @end
