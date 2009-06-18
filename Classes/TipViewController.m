@@ -10,7 +10,7 @@
 
 
 @implementation TipViewController
-@synthesize closeButton, dontShowButton, tipTextView, tipLabel, theAppDelegate, quoteImage, didYouKnowImage;
+@synthesize closeButton, tipLabel, theAppDelegate;
 
 -(IBAction)close
 {	
@@ -22,55 +22,55 @@
 	self.view.frame = CGRectMake(0, -460, 320, 460);//[[UIScreen mainScreen] bounds];			
 	[UIView commitAnimations];		
 }
-
--(IBAction)dontShow
-{
-	[theAppDelegate writeToStats:@"tip_screen" value:@"no"];
-	[self close];
-}
+//
+//-(IBAction)dontShow
+//{
+//	[theAppDelegate writeToStats:@"tip_screen" value:@"no"];
+//	[self close];
+//}
 
 -(void)removeView
 {
 	[self.view removeFromSuperview];
 }
 
-
--(void) nextQuote {
-    int randomNumber = (arc4random() % 2);
-    //NSLog(@"randomNumber:%d", randomNumber);
-	if (randomNumber == 1) {
-        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"plist"]; 
-        NSArray * quotes =  [[[NSArray alloc] initWithContentsOfFile:plistPath] autorelease]; 
-        
-        randomNumber = (arc4random() % [quotes count]);
-        NSArray * quoteArray = [quotes objectAtIndex:randomNumber];
-		
-        NSString * quote  = [quoteArray objectAtIndex:0];
-        NSString * author = [quoteArray objectAtIndex:1];
-        NSLog(@"%d: '%@' -- %@",randomNumber, quote, author);
-        tipLabel.text = @"On Happiness";
-        tipTextView.text = [NSString stringWithFormat:@"%@”\n-- %@",quote,author];
-		
-        quoteImage.hidden = NO;
-        didYouKnowImage.hidden = YES;
-		
-    } else {
-        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"fun_facts" ofType:@"plist"]; 
-        NSArray * facts =  [[[NSArray alloc] initWithContentsOfFile:plistPath] autorelease]; 
-        
-        randomNumber = (arc4random() % [facts count]);
-        NSString * fact = [facts objectAtIndex:randomNumber];
-        NSLog(@"%d: '%@'",randomNumber, fact);
-        tipLabel.text = @"";
-        tipTextView.text = [NSString stringWithFormat:@"%@",fact];
-		
-        quoteImage.hidden = YES;
-        didYouKnowImage.hidden = NO;
-		
-    }
-	
-	
-}
+//
+//-(void) nextQuote {
+//    int randomNumber = (arc4random() % 2);
+//    //NSLog(@"randomNumber:%d", randomNumber);
+//	if (randomNumber == 1) {
+//        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"plist"]; 
+//        NSArray * quotes =  [[[NSArray alloc] initWithContentsOfFile:plistPath] autorelease]; 
+//        
+//        randomNumber = (arc4random() % [quotes count]);
+//        NSArray * quoteArray = [quotes objectAtIndex:randomNumber];
+//		
+//        NSString * quote  = [quoteArray objectAtIndex:0];
+//        NSString * author = [quoteArray objectAtIndex:1];
+//        NSLog(@"%d: '%@' -- %@",randomNumber, quote, author);
+//        tipLabel.text = @"On Happiness";
+//        tipTextView.text = [NSString stringWithFormat:@"%@”\n-- %@",quote,author];
+//		
+//        quoteImage.hidden = NO;
+//        didYouKnowImage.hidden = YES;
+//		
+//    } else {
+//        NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"fun_facts" ofType:@"plist"]; 
+//        NSArray * facts =  [[[NSArray alloc] initWithContentsOfFile:plistPath] autorelease]; 
+//        
+//        randomNumber = (arc4random() % [facts count]);
+//        NSString * fact = [facts objectAtIndex:randomNumber];
+//        NSLog(@"%d: '%@'",randomNumber, fact);
+//        tipLabel.text = @"";
+//        tipTextView.text = [NSString stringWithFormat:@"%@",fact];
+//		
+//        quoteImage.hidden = YES;
+//        didYouKnowImage.hidden = NO;
+//		
+//    }
+//	
+//	
+//}
 
 /* NOT CALLED
  // The designated initializer. Override to perform setup that is required before the view is loaded.
@@ -111,12 +111,8 @@
 
 - (void)dealloc {
 	[closeButton release];
-	[dontShowButton release];
-	[tipTextView release];
     [tipLabel release];
 	[theAppDelegate release];
-    [quoteImage release];
-    [didYouKnowImage release];
     [super dealloc];
 }
 

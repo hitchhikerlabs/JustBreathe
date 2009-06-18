@@ -8,14 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "JustBreatheNewAppDelegate.h"
+#import "TipViewController.h"
 
 @interface JustBreatheViewController : UIViewController {	
+	IBOutlet TipViewController *tipVC;
 	JustBreatheNewAppDelegate *theAppDelegate;
 	IBOutlet UILabel *breatheLabel, *timeTodayLabel, *timeTotalLabel;
 	IBOutlet UIImageView *breatheView;
 	IBOutlet UIButton *startButton;
 	CFAbsoluteTime myStartTime, myStopTime;
-	NSTimer *firstTimer, *secondTimer, *thirdTimer, *fourthTimer;
+	NSTimer *firstTimer, *secondTimer, *thirdTimer, *fourthTimer, *mainTimer;
 	NSArray *imgNames;
 	NSMutableArray *imgArray;
 	BOOL continueAnimation;
@@ -23,12 +25,13 @@
 	IBOutlet UIWebView *infoWebView;
 }
 
+@property (nonatomic, retain) IBOutlet TipViewController *tipVC;
 @property (nonatomic, retain) JustBreatheNewAppDelegate *theAppDelegate;
 @property (nonatomic, retain) IBOutlet UILabel *breatheLabel, *timeTodayLabel, *timeTotalLabel;
 @property (nonatomic, retain) IBOutlet UIImageView *breatheView;
 @property (nonatomic, retain) IBOutlet UIButton *startButton;
 @property CFAbsoluteTime myStartTime, myStopTime;
-@property (nonatomic, retain) NSTimer *firstTimer, *secondTimer, *thirdTimer, *fourthTimer;
+@property (nonatomic, retain) NSTimer *firstTimer, *secondTimer, *thirdTimer, *fourthTimer, *mainTimer;
 @property (nonatomic, retain) NSArray *imgNames;
 @property (nonatomic, retain) NSMutableArray *imgArray;
 @property BOOL continueAnimation;

@@ -15,11 +15,12 @@
 @synthesize breatheView;
 @synthesize startButton;
 @synthesize myStartTime, myStopTime;
-@synthesize firstTimer, secondTimer, thirdTimer, fourthTimer;
+@synthesize firstTimer, secondTimer, thirdTimer, fourthTimer, mainTimer;
 @synthesize imgNames, imgArray;
 @synthesize continueAnimation;
 @synthesize x;
 @synthesize infoWebView;
+@synthesize tipVC;
 /*
  // The designated initializer. Override to perform setup that is required before the view is loaded.
  - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -76,22 +77,34 @@
  */
 -(IBAction) startBreathing {
 	if(self.continueAnimation) {
+		myStopTime = CFAbsoluteTimeGetCurrent(); 
+		int count = (myStopTime - myStartTime)/14;
 		self.continueAnimation = false;
-		[startButton setTitle:@"Start" forState:UIControlStateNormal];
-		[startButton setTitle:@"Start" forState:UIControlStateSelected];
-		[startButton setTitle:@"Start" forState:UIControlStateHighlighted];
+		[startButton setTitle:@"Start Again" forState:UIControlStateNormal];
+		[startButton setTitle:@"Start Again" forState:UIControlStateSelected];
+		[startButton setTitle:@"Start Again" forState:UIControlStateHighlighted];
+		tipVC.view.frame = CGRectMake(0, -460, 320, 460);
+		tipVC.tipLabel.text = [NSString stringWithFormat:@"You just completed %d breaths",count];
+        [UIView beginAnimations:nil context:NULL];
+        [UIView setAnimationDuration:0.5];
+        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+        [tipVC viewWillAppear:YES];
+        [self.view addSubview:tipVC.view];
+        tipVC.view.frame = [[UIScreen mainScreen] bounds];	
+        [UIView commitAnimations];
 	} else {
+		myStartTime = CFAbsoluteTimeGetCurrent();
 		self.continueAnimation = true;
 		self.x = 0.0;
 		[startButton setTitle:@"Stop" forState:UIControlStateNormal];
 		[startButton setTitle:@"Stop" forState:UIControlStateSelected];
 		[startButton setTitle:@"Stop" forState:UIControlStateHighlighted];
 	}
-	myStartTime = CFAbsoluteTimeGetCurrent();
 	if (self.continueAnimation) {
 		breatheView.hidden = NO;
-		[NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(startAnimations:) userInfo:nil repeats:NO];
+		self.mainTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(startAnimations:) userInfo:nil repeats:NO];
 	} else {
+		[self.mainTimer invalidate];
 		if ([self.thirdTimer isValid]) {
 			[self.thirdTimer invalidate];
 		}
@@ -100,27 +113,25 @@
 		breatheView.image = [UIImage imageNamed:@"breathe_background_step1.jpg"];
 		[breatheView stopAnimating];
 		breatheView.hidden = YES;
-		//myStopTime = CFAbsoluteTimeGetCurrent(); 
-//		int currentTime = (myStopTime - myStartTime)/18;
 	}
 }
 
 -(void) startAnimations :(NSTimer*)theTimer {
 	while(self.x < 60) {
-	self.firstTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(firstAnimation:) userInfo:nil repeats:NO];
-	[self.firstTimer isValid];
-	self.x = x+ 6;
-	[breatheView stopAnimating];
-	self.secondTimer =[NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(secondAnimation:) userInfo:nil repeats:NO];
-	[self.secondTimer isValid];
-	self.x = x+ 4;
-	self.thirdTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(thirdAnimation:) userInfo:nil repeats:NO];
-	[self.thirdTimer isValid];
-	self.x = x+ 6;
-	self.fourthTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(fourthAnimation:) userInfo:nil repeats:NO];
-	[self.fourthTimer isValid];
-	self.x = x+ 4;
-	[breatheView stopAnimating];
+		self.firstTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(firstAnimation:) userInfo:nil repeats:NO];
+		[self.firstTimer isValid];
+		self.x = x+ 6;
+		[breatheView stopAnimating];
+		self.secondTimer =[NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(secondAnimation:) userInfo:nil repeats:NO];
+		[self.secondTimer isValid];
+		self.x = x+ 4;
+		self.thirdTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(thirdAnimation:) userInfo:nil repeats:NO];
+		[self.thirdTimer isValid];
+		self.x = x+ 6;
+		//self.fourthTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(fourthAnimation:) userInfo:nil repeats:NO];
+//		[self.fourthTimer isValid];
+//		self.x = x+ 4;
+		[breatheView stopAnimating];
 	}
 }
 
@@ -194,6 +205,8 @@
 	[imgArray release];
 	[fourthTimer release];
 	[infoWebView release];
+	[mainTimer release];
+	[tipVC release];
 	[super dealloc];
 }
 
