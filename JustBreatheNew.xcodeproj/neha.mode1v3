@@ -230,6 +230,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -308,8 +310,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -324,10 +324,6 @@
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
 										<string>JustBreatheViewController.m</string>
-										<key>_historyCapacity</key>
-										<integer>10</integer>
-										<key>bookmark</key>
-										<string>91835D8E0FE952E60005AC79</string>
 										<key>history</key>
 										<array>
 											<string>91FB268D0FE167EC00575950</string>
@@ -335,7 +331,6 @@
 											<string>912E75C20FE6EEBE00F22D46</string>
 											<string>911412BE0FE936F7003EA8B2</string>
 											<string>91835D5A0FE9443B0005AC79</string>
-											<string>91835D700FE945910005AC79</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -401,9 +396,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>91835D7B0FE952BA0005AC79</string>
+				<string>9187112E0FEA7C03001A49D4</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>91835D7C0FE952BA0005AC79</string>
+				<string>9187112F0FEA7C03001A49D4</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -537,12 +532,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>91835D8F0FE952E60005AC79</string>
-		<string>91835D890FE952D30005AC79</string>
-		<string>91835D860FE952BA0005AC79</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>91281F780FDECB6F00D06F09</string>
 		<string>/Users/neha/git/JustBreathe/JustBreatheNew.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -623,7 +612,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>91281F780FDECB6F00D06F09</string>
-				<string>91835D7D0FE952BA0005AC79</string>
+				<string>91DF740F0FE9C30200CBD580</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -743,13 +732,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>91835D7E0FE952BA0005AC79</string>
+				<string>91DF74100FE9D39B00CBD580</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>91835D7F0FE952BA0005AC79</string>
-				<string>91835D800FE952BA0005AC79</string>
-				<string>91835D810FE952BA0005AC79</string>
-				<string>91835D820FE952BA0005AC79</string>
-				<string>91835D830FE952BA0005AC79</string>
+				<string>91DF74110FE9D39B00CBD580</string>
+				<string>91DF74120FE9D39B00CBD580</string>
+				<string>91DF74130FE9D39B00CBD580</string>
+				<string>91DF74140FE9D39B00CBD580</string>
+				<string>91DF74150FE9D39B00CBD580</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -903,7 +892,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>91835D840FE952BA0005AC79</string>
+				<string>91DF74160FE9D39B00CBD580</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

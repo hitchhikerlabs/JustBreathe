@@ -7,11 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TipViewController.h"
 #import "JustBreatheNewAppDelegate.h"
 
 @interface JustBreatheViewController : UIViewController {	
-	IBOutlet TipViewController *tipViewController;
 	JustBreatheNewAppDelegate *theAppDelegate;
 	IBOutlet UILabel *breatheLabel, *timeTodayLabel, *timeTotalLabel;
 	IBOutlet UIImageView *breatheView;
@@ -24,7 +22,6 @@
 	NSTimeInterval x;
 }
 
-@property (nonatomic, retain) IBOutlet TipViewController *tipViewController;
 @property (nonatomic, retain) JustBreatheNewAppDelegate *theAppDelegate;
 @property (nonatomic, retain) IBOutlet UILabel *breatheLabel, *timeTodayLabel, *timeTotalLabel;
 @property (nonatomic, retain) IBOutlet UIImageView *breatheView;

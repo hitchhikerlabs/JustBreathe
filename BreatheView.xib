@@ -8,8 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="43"/>
-			<integer value="29"/>
+			<integer value="3"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -167,7 +166,7 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 							<object class="IBUIImageView" id="680803724">
 								<reference key="NSNextResponder" ref="821295486"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{0, 20}, {320, 440}}</string>
+								<string key="NSFrame">{{0, 10}, {320, 440}}</string>
 								<reference key="NSSuperview" ref="821295486"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -235,9 +234,6 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 				</object>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 			</object>
-			<object class="IBUIViewController" id="941165518">
-				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
-			</object>
 		</object>
 		<object class="IBObjectContainer" key="IBDocument.Objects">
 			<object class="NSMutableArray" key="connectionRecords">
@@ -274,14 +270,6 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 						<reference key="destination" ref="680803724"/>
 					</object>
 					<int key="connectionID">14</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBCocoaTouchOutletConnection" key="connection">
-						<string key="label">tipViewController</string>
-						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="941165518"/>
-					</object>
-					<int key="connectionID">30</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
@@ -322,11 +310,6 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 					<object class="IBObjectRecord">
 						<int key="objectID">-2</int>
 						<reference key="object" ref="975951072"/>
-						<reference key="parent" ref="360949347"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">29</int>
-						<reference key="object" ref="941165518"/>
 						<reference key="parent" ref="360949347"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -411,9 +394,6 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>-1.CustomClassName</string>
 					<string>-2.CustomClassName</string>
-					<string>29.CustomClassName</string>
-					<string>29.IBEditorWindowLastContentRect</string>
-					<string>29.IBPluginDependency</string>
 					<string>3.CustomClassName</string>
 					<string>3.IBEditorWindowLastContentRect</string>
 					<string>3.IBPluginDependency</string>
@@ -432,9 +412,6 @@ bG93aW5nIHRoZSByaHl0aG0gaW4gdGhlIGFwcGxpY2F0aW9uLgo</string>
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>JustBreatheViewController</string>
 					<string>UIResponder</string>
-					<string>TipViewController</string>
-					<string>{{21, 342}, {320, 480}}</string>
-					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>SliderView</string>
 					<string>{{608, 389}, {320, 411}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>

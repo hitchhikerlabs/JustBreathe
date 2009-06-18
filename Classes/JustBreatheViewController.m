@@ -10,7 +10,7 @@
 
 @implementation JustBreatheViewController
 
-@synthesize tipViewController, theAppDelegate;
+@synthesize theAppDelegate;
 @synthesize breatheLabel, timeTodayLabel, timeTotalLabel;
 @synthesize breatheView;
 @synthesize startButton;
@@ -42,21 +42,6 @@
     [super viewDidLoad];
 	
 	self.imgNames = [NSArray arrayWithObjects:@"breathe_background_with_frame2.jpg",@"breathe_background_step1.jpg",@"breathe_background_step2.jpg",@"breathe_background_step3.jpg",@"breathe_background_step4.jpg",@"breathe_background_step5.jpg",@"breathe_background_step6.jpg",@"breathe_background_step7.jpg",@"breathe_background_step8.jpg",@"breathe_background_step9.jpg",@"breathe_background_step10.jpg",@"breathe_background_step11.jpg",@"breathe_background_step12.jpg",@"breathe_background_step13.jpg",@"breathe_background_step14.jpg",@"breathe_background_step15.jpg",@"breathe_background_step16.jpg",@"breathe_background_step17.jpg",@"breathe_background_step18.jpg",@"breathe_background_step19.jpg",nil];
-	//for (int i = 0;i < [imgNames count]; i++) {
-//		[imgArray addObject:[UIImage imageNamed:[imgNames objectAtIndex:i]];
-//	}
-    theAppDelegate = (JustBreatheNewAppDelegate *) [[UIApplication sharedApplication] delegate];
-	if([[theAppDelegate getStringFromStats:@"tip_screen"] isEqualToString:@"yes"]) {
-        tipViewController.view.frame = CGRectMake(0, -460, 320, 460);
-        //tipViewController.theAppDelegate = delegate;
-        [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationDuration:0.5];
-        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-        [tipViewController viewWillAppear:YES];
-        [self.view addSubview:tipViewController.view];
-        tipViewController.view.frame = [[UIScreen mainScreen] bounds];	
-        [UIView commitAnimations];
-	}
 	
 	//UIView *lhAdView = [[UIView alloc] initWithFrame:CGRectMake(0, 384, 320, 80)];
 	//	UIColor *backgroundColor = [UIColor colorWithRed:(((float)191)/255.0) green:(((float)30)/255.0) blue:(((float)46)/255.0) alpha:1.0];
@@ -182,25 +167,12 @@
 	[UIView commitAnimations];
 }
 
--(IBAction) showInfo {
-	tipViewController.view.frame = CGRectMake(0, -460, 320, 460);
-	//theAppDelegate//tipViewController.theAppDelegate = delegate;
-	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:0.5];
-	[UIView setAnimationCurve:UIViewAnimationCurveLinear];
-	[tipViewController viewWillAppear:YES];
-	[self.view addSubview:tipViewController.view];
-	tipViewController.view.frame = [[UIScreen mainScreen] bounds];	
-	[UIView commitAnimations];
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
     // Release anything that's not essential, such as cached data
 }
 
 - (void)dealloc {
-	[tipViewController release];
 	[theAppDelegate release];
 	[breatheLabel release];
 	[timeTotalLabel release];
