@@ -15,7 +15,7 @@
 @synthesize breatheView;
 @synthesize startButton;
 @synthesize myStartTime, myStopTime;
-@synthesize firstTimer, secondTimer, thirdTimer;
+@synthesize firstTimer, secondTimer, thirdTimer, fourthTimer;
 @synthesize imgNames, imgArray;
 @synthesize continueAnimation;
 @synthesize x;
@@ -107,13 +107,16 @@
 	while(self.x < 60) {
 	self.firstTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(firstAnimation:) userInfo:nil repeats:NO];
 	[self.firstTimer isValid];
-	self.x = x+ 3;
+	self.x = x+ 6;
 	[breatheView stopAnimating];
 	self.secondTimer =[NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(secondAnimation:) userInfo:nil repeats:NO];
 	[self.secondTimer isValid];
-	self.x = x+ 3;
+	self.x = x+ 4;
 	self.thirdTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(thirdAnimation:) userInfo:nil repeats:NO];
 	[self.thirdTimer isValid];
+	self.x = x+ 6;
+	self.fourthTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(fourthAnimation:) userInfo:nil repeats:NO];
+	[self.fourthTimer isValid];
 	self.x = x+ 4;
 	[breatheView stopAnimating];
 	}
@@ -121,35 +124,27 @@
 
 - (void)firstAnimation:(NSTimer*)theTimer {
 	NSMutableArray *myImages = [[NSMutableArray alloc] init];
-	for(int i=0;i< [imgNames count]; i++) {
-//		// Load the image
-//		NSString *name = [imgNames objectAtIndex:i];
-//    	
-//		UIImage *image = [UIImage newImageFromResource:name];
-//    
-//		// Put it in the cache
-//		[[ImageCache sharedImageCache] storeImage:image withKey:name];
-//    
-//		// Release the image
-//		[image release];
-//		image = nil;
-//	
-//		// Retrieve the image back
-//		UIImage *savedImage = [[ImageCache sharedImageCache] imageForKey:name];
-//		//imageView.image = savedImage;	
+	for(int i=0;i< [imgNames count]; i++) {	
 		[myImages addObject:[UIImage imageNamed:[imgNames objectAtIndex:i]] ];
 	}
 	[UIView beginAnimations:nil context:nil];
 	breatheView.animationImages = myImages; 
-	breatheView.animationDuration = 6.00; 
-	// seconds 
+	breatheView.animationDuration = 6.0; 
 	breatheView.animationRepeatCount = 0; // 0 = loops forever 
 	[breatheView startAnimating];
 	[UIView commitAnimations];
 }
 
 - (void)secondAnimation:(NSTimer*)theTimer {
-	breatheView.image = [UIImage imageNamed:@"breathe_background_step19.jpg"];
+	//breatheView.image = [UIImage imageNamed:@"breathe_background_step19.jpg"];
+	UIImage *img =  [UIImage imageNamed:@"breathe_background_step19.jpg"];
+	NSMutableArray *myImages = [[NSMutableArray alloc] init];
+	for(int i=0;i< 7; i++) {	
+		[myImages addObject:img ];
+	}
+	breatheView.animationImages = myImages;
+	breatheView.animationDuration = 4.00;
+	[breatheView startAnimating];
 }
 
 - (void)thirdAnimation:(NSTimer*)theTimer {
@@ -160,11 +155,22 @@
 	}
 	[UIView beginAnimations:nil context:nil];
 	breatheView.animationImages = myImages; 
-	breatheView.animationDuration = 5.00; 
+	breatheView.animationDuration = 6.00; 
 	// seconds 
 	breatheView.animationRepeatCount = 0; // 0 = loops forever 
 	[breatheView startAnimating];
 	[UIView commitAnimations];
+}
+
+- (void)fourthAnimation:(NSTimer*)theTimer {
+	UIImage *img =  [UIImage imageNamed:@"breathe_background_with_frame2.jpg"];
+	NSMutableArray *myImages = [[NSMutableArray alloc] init];
+	for(int i=0;i< 7; i++) {	
+		[myImages addObject:img ];
+	}
+	breatheView.animationImages = myImages;
+	breatheView.animationDuration = 4.00;
+	[breatheView startAnimating];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -184,6 +190,7 @@
 	[thirdTimer release];
 	[imgNames release];
 	[imgArray release];
+	[fourthTimer release];
 	[super dealloc];
 }
 

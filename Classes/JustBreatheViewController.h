@@ -15,7 +15,7 @@
 	IBOutlet UIImageView *breatheView;
 	IBOutlet UIButton *startButton;
 	CFAbsoluteTime myStartTime, myStopTime;
-	NSTimer *firstTimer, *secondTimer, *thirdTimer;
+	NSTimer *firstTimer, *secondTimer, *thirdTimer, *fourthTimer;
 	NSArray *imgNames;
 	NSMutableArray *imgArray;
 	BOOL continueAnimation;
@@ -27,7 +27,7 @@
 @property (nonatomic, retain) IBOutlet UIImageView *breatheView;
 @property (nonatomic, retain) IBOutlet UIButton *startButton;
 @property CFAbsoluteTime myStartTime, myStopTime;
-@property (nonatomic, retain) NSTimer *firstTimer, *secondTimer, *thirdTimer;
+@property (nonatomic, retain) NSTimer *firstTimer, *secondTimer, *thirdTimer, *fourthTimer;
 @property (nonatomic, retain) NSArray *imgNames;
 @property (nonatomic, retain) NSMutableArray *imgArray;
 @property BOOL continueAnimation;
