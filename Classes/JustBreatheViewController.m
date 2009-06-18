@@ -41,7 +41,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
-	self.imgNames = [NSArray arrayWithObjects:@"breathe_background_with_frame2.jpg",@"breathe_background_step1.jpg",@"breathe_background_step2.jpg",@"breathe_background_step3.jpg",@"breathe_background_step4.jpg",@"breathe_background_step5.jpg",@"breathe_background_step6.jpg",@"breathe_background_step7.jpg",@"breathe_background_step8.jpg",@"breathe_background_step9.jpg",@"breathe_background_step10.jpg",@"breathe_background_step11.jpg",@"breathe_background_step12.jpg",@"breathe_background_step13.jpg",@"breathe_background_step14.jpg",@"breathe_background_step15.jpg",@"breathe_background_step16.jpg",@"breathe_background_step17.jpg",@"breathe_background_step18.jpg",@"breathe_background_step19.jpg",nil];
+	self.imgNames = [NSArray arrayWithObjects:@"breathe_background_step1.jpg",@"breathe_background_step2.jpg",@"breathe_background_step3.jpg",@"breathe_background_step4.jpg",@"breathe_background_step5.jpg",@"breathe_background_step6.jpg",@"breathe_background_step7.jpg",@"breathe_background_step8.jpg",@"breathe_background_step9.jpg",@"breathe_background_step10.jpg",@"breathe_background_step11.jpg",@"breathe_background_step12.jpg",@"breathe_background_step13.jpg",@"breathe_background_step14.jpg",@"breathe_background_step15.jpg",@"breathe_background_step16.jpg",@"breathe_background_step17.jpg",@"breathe_background_step18.jpg",@"breathe_background_step19.jpg",nil];
 	
 	//UIView *lhAdView = [[UIView alloc] initWithFrame:CGRectMake(0, 384, 320, 80)];
 	//	UIColor *backgroundColor = [UIColor colorWithRed:(((float)191)/255.0) green:(((float)30)/255.0) blue:(((float)46)/255.0) alpha:1.0];
@@ -95,7 +95,7 @@
 		}
 		if ([self.secondTimer isValid]) [self.secondTimer invalidate];
 		if ([self.firstTimer isValid]) [self.firstTimer invalidate];
-		breatheView.image = [UIImage imageNamed:@"breathe_background_with_frame2.jpg"];
+		breatheView.image = [UIImage imageNamed:@"breathe_background_step1.jpg"];
 		[breatheView stopAnimating];
 		breatheView.hidden = YES;
 		//myStopTime = CFAbsoluteTimeGetCurrent(); 
@@ -163,7 +163,7 @@
 }
 
 - (void)fourthAnimation:(NSTimer*)theTimer {
-	UIImage *img =  [UIImage imageNamed:@"breathe_background_with_frame2.jpg"];
+	UIImage *img =  [UIImage imageNamed:@"breathe_background_step1.jpg"];
 	NSMutableArray *myImages = [[NSMutableArray alloc] init];
 	for(int i=0;i< 7; i++) {	
 		[myImages addObject:img ];
