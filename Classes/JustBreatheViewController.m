@@ -119,14 +119,14 @@
 }
 
 -(void) startAnimations {
-	//while(self.x < 60) {
+	while(self.x < 60) {
 		self.firstTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(firstAnimation:) userInfo:nil repeats:NO];
 		[self.firstTimer isValid];
 		self.x = x+ 6;
 		[breatheView stopAnimating];
-		self.secondTimer =[NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(secondAnimation:) userInfo:nil repeats:NO];
-		[self.secondTimer isValid];
-		self.x = x+ 4;
+		//self.secondTimer =[NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(secondAnimation:) userInfo:nil repeats:NO];
+//		[self.secondTimer isValid];
+//		self.x = x+ 4;
 		self.thirdTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(thirdAnimation:) userInfo:nil repeats:NO];
 		[self.thirdTimer isValid];
 		self.x = x+ 6;
@@ -134,7 +134,7 @@
 //		[self.fourthTimer isValid];
 //		self.x = x+ 4;
 		[breatheView stopAnimating];
-	//}
+	}
 }
 
 - (void)firstAnimation:(NSTimer*)theTimer {
