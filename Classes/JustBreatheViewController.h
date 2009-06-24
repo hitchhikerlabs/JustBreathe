@@ -40,5 +40,5 @@
 
 
 -(IBAction) startBreathing;
--(void) startAnimations :(NSTimer*)theTimer;
+-(void) startAnimations;
 @end
