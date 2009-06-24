@@ -21,6 +21,7 @@
 @synthesize x;
 @synthesize infoWebView;
 @synthesize tipVC;
+@synthesize sliderView;
 /*
  // The designated initializer. Override to perform setup that is required before the view is loaded.
  - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -42,6 +43,11 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	theAppDelegate = (JustBreatheNewAppDelegate*)[[UIApplication sharedApplication] delegate];
+	if([[theAppDelegate getStringFromStats:@"first_time"] isEqualToString:@"yes"]) {
+		[sliderView flipClicked];
+		[theAppDelegate writeToStats:@"first_time" value:@"no"];
+	}
 	
 	self.imgNames = [NSArray arrayWithObjects:@"breathe_background_step1.jpg",@"breathe_background_step2.jpg",@"breathe_background_step3.jpg",@"breathe_background_step4.jpg",@"breathe_background_step5.jpg",@"breathe_background_step6.jpg",@"breathe_background_step7.jpg",@"breathe_background_step8.jpg",@"breathe_background_step9.jpg",@"breathe_background_step10.jpg",@"breathe_background_step11.jpg",@"breathe_background_step12.jpg",@"breathe_background_step13.jpg",@"breathe_background_step14.jpg",@"breathe_background_step15.jpg",@"breathe_background_step16.jpg",@"breathe_background_step17.jpg",@"breathe_background_step18.jpg",@"breathe_background_step19.jpg",nil];
 	[infoWebView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource: @"terms" ofType:@"html"]isDirectory:NO]]];
@@ -198,6 +204,7 @@
 	[infoWebView release];
 	[mainTimer release];
 	[tipVC release];
+	[sliderView release];
 	[super dealloc];
 }
 

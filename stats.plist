@@ -10,5 +10,7 @@
 	<integer>0</integer>
 	<key>tip_screen</key>
 	<string></string>
+	<key>first_time</key>
+	<string>yes</string>
 </dict>
 </plist>

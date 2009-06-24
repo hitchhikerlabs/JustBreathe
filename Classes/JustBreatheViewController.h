@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JustBreatheNewAppDelegate.h"
 #import "TipViewController.h"
+#import "SliderView.h"
 
 @interface JustBreatheViewController : UIViewController {	
 	IBOutlet TipViewController *tipVC;
@@ -23,6 +24,7 @@
 	BOOL continueAnimation;
 	NSTimeInterval x;
 	IBOutlet UIWebView *infoWebView;
+	IBOutlet SliderView *sliderView;
 }
 
 @property (nonatomic, retain) IBOutlet TipViewController *tipVC;
@@ -37,6 +39,7 @@
 @property BOOL continueAnimation;
 @property NSTimeInterval x;
 @property (nonatomic, retain) IBOutlet UIWebView *infoWebView;
+@property (nonatomic, retain) IBOutlet SliderView *sliderView;
 
 
 -(IBAction) startBreathing;
