@@ -328,21 +328,17 @@
 										<key>_historyCapacity</key>
 										<integer>10</integer>
 										<key>bookmark</key>
-										<string>9170E60F0FF7971800DF4502</string>
+										<string>91DCF9860FF9815200746A2F</string>
 										<key>history</key>
 										<array>
 											<string>91FB268D0FE167EC00575950</string>
 											<string>911412BE0FE936F7003EA8B2</string>
 											<string>91964B490FEAAC1900FE765A</string>
-											<string>913B8B2A0FF29EC3004C4058</string>
 											<string>913B8B2B0FF29EC3004C4058</string>
 											<string>915EACE90FF29F490092BFD8</string>
 											<string>915EACEA0FF29F490092BFD8</string>
-											<string>9177BBC00FF3C0D1009FD786</string>
-										</array>
-										<key>nextStack</key>
-										<array>
-											<string>915EACEC0FF29F490092BFD8</string>
+											<string>91DCF95F0FF97EAB00746A2F</string>
+											<string>91DCF9710FF9805B00746A2F</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -353,6 +349,9 @@
 											<string>91964B790FEAAEF100FE765A</string>
 											<string>91964B860FEAAFEB00FE765A</string>
 											<string>913B8B2D0FF29EC3004C4058</string>
+											<string>911E39620FF965F2001826BB</string>
+											<string>91DCF9610FF97EAB00746A2F</string>
+											<string>91DCF9620FF97EAB00746A2F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -410,9 +409,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>9170E6100FF7971800DF4502</string>
+				<string>91DCF91F0FF9790E00746A2F</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>9170E6110FF7971800DF4502</string>
+				<string>91DCF9200FF9790E00746A2F</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -546,6 +545,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>91281F780FDECB6F00D06F09</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>/Users/neha/git/JustBreathe/JustBreatheNew.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -565,12 +567,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>JustBreatheViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -626,7 +630,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>91281F780FDECB6F00D06F09</string>
-				<string>9177BBB80FF3B996009FD786</string>
+				<string>91DCF92B0FF9799500746A2F</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -746,13 +750,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>9177BBB90FF3B996009FD786</string>
+				<string>91DCF9210FF9790E00746A2F</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>9177BBBA0FF3B996009FD786</string>
-				<string>9177BBBB0FF3B996009FD786</string>
-				<string>9177BBBC0FF3B996009FD786</string>
-				<string>9177BBBD0FF3B996009FD786</string>
-				<string>9177BBBE0FF3B996009FD786</string>
+				<string>91DCF9220FF9790E00746A2F</string>
+				<string>91DCF9230FF9790E00746A2F</string>
+				<string>91DCF9240FF9790E00746A2F</string>
+				<string>91DCF9250FF9790E00746A2F</string>
+				<string>91DCF9260FF9790E00746A2F</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -871,6 +875,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -906,7 +912,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>9177BBBF0FF3B996009FD786</string>
+				<string>91DCF92C0FF9799500746A2F</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>

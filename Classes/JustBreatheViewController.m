@@ -38,7 +38,10 @@
  }
  */
 
-
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+	startButton.hidden = NO;
+}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -82,50 +85,59 @@
  }
  */
 -(IBAction) startBreathing {
-	if(self.continueAnimation) {
-		myStopTime = CFAbsoluteTimeGetCurrent(); 
-		int count = (myStopTime - myStartTime)/14;
-		self.continueAnimation = false;
-		[startButton setTitle:@"Start Again" forState:UIControlStateNormal];
-		[startButton setTitle:@"Start Again" forState:UIControlStateSelected];
-		[startButton setTitle:@"Start Again" forState:UIControlStateHighlighted];
-		tipVC.view.frame = CGRectMake(0, -460, 320, 460);
-		tipVC.tipLabel.text = [NSString stringWithFormat:@"You just completed %d breaths",count];
-        [UIView beginAnimations:nil context:NULL];
-        [UIView setAnimationDuration:0.5];
-        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
-        [tipVC viewWillAppear:YES];
-        [self.view addSubview:tipVC.view];
-        tipVC.view.frame = [[UIScreen mainScreen] bounds];	
-        [UIView commitAnimations];
-	} 
-	else {
-		myStartTime = CFAbsoluteTimeGetCurrent();
-		self.continueAnimation = true;
-		self.x = 0.0;
-		[startButton setTitle:@"Stop" forState:UIControlStateNormal];
-		[startButton setTitle:@"Stop" forState:UIControlStateSelected];
-		[startButton setTitle:@"Stop" forState:UIControlStateHighlighted];
-	}
-	if (self.continueAnimation) {
-		breatheView.hidden = NO;
-		//self.mainTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(startAnimations:) userInfo:nil repeats:NO];
-		[self startAnimations];
-	} else {
-		[self.mainTimer invalidate];
-		if ([self.thirdTimer isValid]) {
-			[self.thirdTimer invalidate];
-		}
-		if ([self.secondTimer isValid]) [self.secondTimer invalidate];
-		if ([self.firstTimer isValid]) [self.firstTimer invalidate];
-		breatheView.image = [UIImage imageNamed:@"breathe_background_step1.jpg"];
-		[breatheView stopAnimating];
-		breatheView.hidden = YES;
-	}
+	NSLog(@"Button clicked");
+	self.x = 0.0;
+	startButton.hidden = YES;
+	[self performSelectorInBackground:@selector(changeButton) withObject:nil];
+	[self startAnimations];
+	
+//	if(self.continueAnimation) {
+//		myStopTime = CFAbsoluteTimeGetCurrent(); 
+//		int count = (myStopTime - myStartTime)/14;
+//		self.continueAnimation = false;
+//		[startButton setTitle:@"Start Again" forState:UIControlStateNormal];
+//		[startButton setTitle:@"Start Again" forState:UIControlStateSelected];
+//		[startButton setTitle:@"Start Again" forState:UIControlStateHighlighted];
+//		tipVC.view.frame = CGRectMake(0, -460, 320, 460);
+//		tipVC.tipLabel.text = [NSString stringWithFormat:@"You just completed %d breaths",count];
+//        [UIView beginAnimations:nil context:NULL];
+//        [UIView setAnimationDuration:0.5];
+//        [UIView setAnimationCurve:UIViewAnimationCurveLinear];
+//        [tipVC viewWillAppear:YES];
+//        [self.view addSubview:tipVC.view];
+//        tipVC.view.frame = [[UIScreen mainScreen] bounds];	
+//        [UIView commitAnimations];
+//	} 
+//	else {
+//		myStartTime = CFAbsoluteTimeGetCurrent();
+//		self.continueAnimation = true;
+//		self.x = 0.0;
+//		//startButton.hidden = YES;
+//		[startButton setTitle:@"Stop" forState:UIControlStateNormal];
+//		[startButton setTitle:@"Stop" forState:UIControlStateSelected];
+//		[startButton setTitle:@"Stop" forState:UIControlStateHighlighted];
+//	}
+//	if (self.continueAnimation) {
+//		breatheView.hidden = NO;
+//		//self.mainTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(startAnimations:) userInfo:nil repeats:NO];
+//		[self startAnimations];
+//	} else {
+//		//[self.mainTimer invalidate];
+//		if ([self.thirdTimer isValid]) {
+//			[self.thirdTimer invalidate];
+//			self.thirdTimer = nil;
+//		}
+//		//if ([self.secondTimer isValid]) [self.secondTimer invalidate];
+//		if ([self.firstTimer isValid]) [self.firstTimer invalidate];
+//		self.firstTimer = nil;
+//		breatheView.image = [UIImage imageNamed:@"breathe_background_step1.jpg"];
+//		[breatheView stopAnimating];
+//		breatheView.hidden = YES;
+//	}
 }
 
 -(void) startAnimations {
-	while(self.x < 60) {
+	while(self.x < 72) {
 		self.firstTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(firstAnimation:) userInfo:nil repeats:NO];
 		[self.firstTimer isValid];
 		self.x = x+ 6;
@@ -136,9 +148,6 @@
 		self.thirdTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(thirdAnimation:) userInfo:nil repeats:NO];
 		[self.thirdTimer isValid];
 		self.x = x+ 6;
-		//self.fourthTimer = [NSTimer scheduledTimerWithTimeInterval:x target:self selector:@selector(fourthAnimation:) userInfo:nil repeats:NO];
-//		[self.fourthTimer isValid];
-//		self.x = x+ 4;
 		[breatheView stopAnimating];
 	}
 }
@@ -181,6 +190,22 @@
 	breatheView.animationRepeatCount = 1; // 0 = loops forever 
 	[breatheView startAnimating];
 	[UIView commitAnimations];
+}
+
+-(void)changeButton {
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init]; // we're in a new thread here, so we need our own autorelease pool
+    [NSThread setThreadPriority:0.2]; // Keep the priority low
+	[NSThread sleepForTimeInterval:72.0]; 
+	startButton.hidden = NO;
+	[startButton setTitle:@"Start Again" forState:UIControlStateNormal];
+	[startButton setTitle:@"Start Again" forState:UIControlStateSelected];
+	[startButton setTitle:@"Start Again" forState:UIControlStateHighlighted];
+	//[startButton addTarget:self action:@selector(startBreathing) forControlEvents:UIControlStateNormal];
+//	[startButton addTarget:self action:@selector(startBreathing) forControlEvents:UIControlStateSelected];
+//	[startButton addTarget:self action:@selector(startBreathing) forControlEvents:UIControlStateHighlighted];
+
+	[pool release];
+	
 }
 
 - (void)didReceiveMemoryWarning {

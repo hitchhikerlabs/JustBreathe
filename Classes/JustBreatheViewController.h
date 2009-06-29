@@ -44,4 +44,6 @@
 
 -(IBAction) startBreathing;
 -(void) startAnimations;
+-(void)changeButton;
+
 @end
