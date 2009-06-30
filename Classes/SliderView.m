@@ -10,12 +10,9 @@
 
 
 @implementation SliderView
-@synthesize startTouchPosition, dirString, name;
 @synthesize scrollView, activityTextLabel, activityTitleLabel, activityButton, videoButton;
 
 - (void)dealloc {
-    [dirString release];
-    [name release];
     [scrollView release];
     [activityTextLabel release];
     [activityTitleLabel release];

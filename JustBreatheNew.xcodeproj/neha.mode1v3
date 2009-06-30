@@ -197,7 +197,53 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>91806E3E0FFA74D200092224</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>SliderView.h</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>91806E3F0FFA74D200092224</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>SliderView.h</string>
+						<key>_historyCapacity</key>
+						<integer>10</integer>
+						<key>bookmark</key>
+						<string>91806E430FFA74D200092224</string>
+						<key>history</key>
+						<array>
+							<string>91806E400FFA74D200092224</string>
+							<string>91806E410FFA74D200092224</string>
+						</array>
+						<key>prevStack</key>
+						<array>
+							<string>91806E420FFA74D200092224</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1390, 695}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>15 137 1390 736 0 0 1440 878 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -273,8 +319,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
-									<integer>11</integer>
+									<integer>3</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -316,7 +362,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JustBreatheViewController.m</string>
+								<string>SliderView.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,21 +370,23 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>JustBreatheViewController.m</string>
+										<string>SliderView.h</string>
 										<key>_historyCapacity</key>
 										<integer>10</integer>
 										<key>bookmark</key>
-										<string>91DCF9860FF9815200746A2F</string>
+										<string>91806E3D0FFA74D200092224</string>
 										<key>history</key>
 										<array>
-											<string>91FB268D0FE167EC00575950</string>
 											<string>911412BE0FE936F7003EA8B2</string>
 											<string>91964B490FEAAC1900FE765A</string>
-											<string>913B8B2B0FF29EC3004C4058</string>
 											<string>915EACE90FF29F490092BFD8</string>
 											<string>915EACEA0FF29F490092BFD8</string>
 											<string>91DCF95F0FF97EAB00746A2F</string>
-											<string>91DCF9710FF9805B00746A2F</string>
+											<string>91806E330FFA74D200092224</string>
+											<string>91806E340FFA74D200092224</string>
+											<string>91806E350FFA74D200092224</string>
+											<string>91806E360FFA74D200092224</string>
+											<string>91806E370FFA74D200092224</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -350,8 +398,11 @@
 											<string>91964B860FEAAFEB00FE765A</string>
 											<string>913B8B2D0FF29EC3004C4058</string>
 											<string>911E39620FF965F2001826BB</string>
-											<string>91DCF9610FF97EAB00746A2F</string>
-											<string>91DCF9620FF97EAB00746A2F</string>
+											<string>91806E380FFA74D200092224</string>
+											<string>91806E390FFA74D200092224</string>
+											<string>91806E3A0FFA74D200092224</string>
+											<string>91806E3B0FFA74D200092224</string>
+											<string>91806E3C0FFA74D200092224</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -409,9 +460,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>91DCF91F0FF9790E00746A2F</string>
+				<string>91806E180FFA73D000092224</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>91DCF9200FF9790E00746A2F</string>
+				<string>91806E190FFA73D000092224</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -545,9 +596,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>91281F780FDECB6F00D06F09</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>91281F780FDECB6F00D06F09</string>
+		<string>91806E3E0FFA74D200092224</string>
 		<string>/Users/neha/git/JustBreathe/JustBreatheNew.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -574,7 +627,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>JustBreatheViewController.m</string>
+								<string>SliderView.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -630,7 +683,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>91281F780FDECB6F00D06F09</string>
-				<string>91DCF92B0FF9799500746A2F</string>
+				<string>91806E1A0FFA73D000092224</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -750,13 +803,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>91DCF9210FF9790E00746A2F</string>
+				<string>91806E1F0FFA744C00092224</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>91DCF9220FF9790E00746A2F</string>
-				<string>91DCF9230FF9790E00746A2F</string>
-				<string>91DCF9240FF9790E00746A2F</string>
-				<string>91DCF9250FF9790E00746A2F</string>
-				<string>91DCF9260FF9790E00746A2F</string>
+				<string>91806E200FFA744C00092224</string>
+				<string>91806E210FFA744C00092224</string>
+				<string>91806E220FFA744C00092224</string>
+				<string>91806E230FFA744C00092224</string>
+				<string>91806E240FFA744C00092224</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -846,8 +899,8 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C530D57069F1CE1000CFCEE</string>
-				<string>91FB26780FE1679F00575950</string>
-				<string>91FB26790FE1679F00575950</string>
+				<string>91806E260FFA744C00092224</string>
+				<string>91806E270FFA744C00092224</string>
 				<string>1CDD528C0622207200134675</string>
 				<string>1CD0528E0623707200166675</string>
 			</array>
@@ -875,8 +928,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -912,7 +963,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>91DCF92C0FF9799500746A2F</string>
+				<string>91806E280FFA744C00092224</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
